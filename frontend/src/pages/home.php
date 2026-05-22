@@ -21,6 +21,8 @@ $pageTitle = 'Resource Housing - Your Home, Your Investment';
 
 <main>
   <?php require __DIR__ . '/heroSection.php'; ?>
+  <?php require __DIR__ . '/propertyServices.php'; ?>
+  <?php require __DIR__ . '/howItWorks.php'; ?>
 </main>
 
 <?php require __DIR__ . '/becomeTenants.php'; ?>
