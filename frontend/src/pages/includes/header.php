@@ -1,7 +1,7 @@
 ﻿<?php
 $_navPage    = basename($_SERVER["PHP_SELF"] ?? "");
 $_isHome     = in_array($_navPage, ["index.php", "home.php"]);
-$_isServices = in_array($_navPage, ["design.php", "hmo.php", "compliance.php"]);
+$_isServices = in_array($_navPage, ["propert-managment.php", "hmo.php", "compliance.php"]);
 $_isProps    = ($_navPage === "properties.php");
 $_isAbout    = ($_navPage === "about.php");
 $_isContact  = ($_navPage === "contact.php");
@@ -29,7 +29,7 @@ $_isContact  = ($_navPage === "contact.php");
         </button>
         <div class="absolute left-0 mt-2 w-64 rounded-md shadow-lg py-1 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0 bg-white"
              style="border: 1px solid rgba(0,0,0,0.08);">
-          <a href="/src/pages/design.php"     class="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-50 transition-colors">Property Management</a>
+          <a href="/src/pages/propert-managment.php"     class="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-50 transition-colors">Property Management</a>
           <a href="/src/pages/hmo.php"        class="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-50 transition-colors">HMO</a>
           <a href="/src/pages/compliance.php" class="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-50 transition-colors">Property Compliance</a>
         </div>
@@ -92,7 +92,7 @@ $_isContact  = ($_navPage === "contact.php");
             </svg>
           </button>
           <div id="mobileServicesMenu" class="pl-4 hidden">
-            <a href="/src/pages/design.php"     class="block py-1.5 text-white/70 hover:text-white transition-colors text-sm">Property Management</a>
+            <a href="/src/pages/propert-managment.php"     class="block py-1.5 text-white/70 hover:text-white transition-colors text-sm">Property Management</a>
             <a href="/src/pages/hmo.php"        class="block py-1.5 text-white/70 hover:text-white transition-colors text-sm">HMO</a>
             <a href="/src/pages/compliance.php" class="block py-1.5 text-white/70 hover:text-white transition-colors text-sm">Property Compliance</a>
           </div>

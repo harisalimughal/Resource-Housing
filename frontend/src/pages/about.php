@@ -1,4 +1,4 @@
-<?php $pageTitle = 'About Us – Resource Housing'; ?>
+﻿<?php $pageTitle = 'About Us – Resource Housing'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,7 @@
 </head>
 <body class="bg-white">
 
-<?php require __DIR__ . '/header.php'; ?>
+<?php require __DIR__ . '/includes/header.php'; ?>
 
 <main class="max-w-screen-xl mx-auto px-8 md:px-16 py-20">
   <h1 class="text-4xl font-bold mb-4" style="color: var(--brand-primary); font-family:'Abhaya Libre',serif;">About Us</h1>
@@ -24,8 +24,8 @@
   </p>
 </main>
 
-<?php require __DIR__ . '/becomeTenants.php'; ?>
-<?php require __DIR__ . '/footer.php'; ?>
+<?php require __DIR__ . '/includes/becomeTenants.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 
 </body>
 </html>

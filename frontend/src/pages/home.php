@@ -17,16 +17,19 @@ $pageTitle = 'Resource Housing - Your Home, Your Investment';
 </head>
 <body class="bg-white">
 
-<?php require __DIR__ . '/header.php'; ?>
+<?php require __DIR__ . '/includes/header.php'; ?>
 
 <main>
-  <?php require __DIR__ . '/heroSection.php'; ?>
-  <?php require __DIR__ . '/propertyServices.php'; ?>
-  <?php require __DIR__ . '/howItWorks.php'; ?>
+  <?php require __DIR__ . '/includes/heroSection.php'; ?>
+  <?php require __DIR__ . '/includes/propertyServices.php'; ?>
+  <?php require __DIR__ . '/includes/howItWorks.php'; ?>
+  <?php require __DIR__ . '/includes/availableProperties.php'; ?>
+  <?php require __DIR__ . '/includes/expertSection.php'; ?>
+  <?php require __DIR__ . '/includes/testimonialsSection.php'; ?>
 </main>
 
-<?php require __DIR__ . '/becomeTenants.php'; ?>
-<?php require __DIR__ . '/footer.php'; ?>
+<?php require __DIR__ . '/includes/becomeTenants.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>
 
 </body>
 </html>

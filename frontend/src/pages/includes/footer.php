@@ -56,8 +56,8 @@
       <div class="md:pt-2">
         <h3 class="text-white text-lg font-semibold mb-6" style="font-family:'Abhaya Libre',serif;">Additional Links</h3>
         <ul class="space-y-3">
-          <li><a href="/src/pages/design.php"     class="footer-link">Services</a></li>
-          <li><a href="/src/pages/design.php"     class="footer-link">Property Management</a></li>
+          <li><a href="/src/pages/propert-managment.php"     class="footer-link">Services</a></li>
+          <li><a href="/src/pages/propert-managment.php"     class="footer-link">Property Management</a></li>
           <li><a href="/src/pages/hmo.php"        class="footer-link">HMO (Supported Accommodation)</a></li>
           <li><a href="/src/pages/tenants.php"    class="footer-link">Tenants</a></li>
         </ul>
