@@ -33,7 +33,7 @@
           At Resource Housing we provide more than just a place to live. We offer safe, supportive accommodation designed to help you move toward independent living. Our team gives you the comfort, stability, and personal support you need while helping you develop life skills or finding education or work opportunities.
         </p>
         <a href="#tenants-enquiry" class="design-btn-primary"
-           style="display:inline-block; background:var(--brand-primary); color:#ffffff; font-family:'Abhaya Libre',serif; font-weight:600; font-size:1rem; padding:14px 32px; text-decoration:none; border-radius:0; border:1.5px solid var(--brand-primary); transition:background 0.25s ease, color 0.25s ease;">
+           style="display:inline-block; background:var(--brand-primary); color:#ffffff; font-family:'Abhaya Libre',serif; font-weight:600; font-size:1rem; padding:14px 32px; border-radius:0; border:1.5px solid var(--brand-primary); text-decoration:none; transition:background 0.25s ease, color 0.25s ease;">
           Apply Now
         </a>
       </div>
@@ -119,10 +119,10 @@
           If you're unsure whether you qualify, get in touch — we'll guide you through the process.
         </p>
 
-        <a href="#tenants-enquiry" class="design-btn-outline"
-           style="display:inline-block; border:1.5px solid #ffffff; color:#ffffff; font-family:'Abhaya Libre',serif; font-weight:600; font-size:0.95rem; padding:12px 28px; text-decoration:none; border-radius:0; transition:background 0.25s ease, color 0.25s ease;">
+        <button onclick="document.getElementById('pmTenantModal').style.display='flex';" class="design-btn-outline"
+                style="display:inline-block; border:1.5px solid #ffffff; color:#ffffff; background:transparent; font-family:'Abhaya Libre',serif; font-weight:600; font-size:0.95rem; padding:12px 28px; border-radius:0; cursor:pointer; transition:background 0.25s ease, color 0.25s ease;">
           Tenant Enquiry
-        </a>
+        </button>
       </div>
 
     </div>
@@ -168,7 +168,7 @@
 
       <!-- Right: image -->
       <div style="flex:1; min-width:0;">
-        <img src="/public/assets/images/uk-houses/uk-14.jpg" alt="Responsibilities"
+        <img src="/public/assets/images/uk-houses/uk-2.jpg" alt="Responsibilities"
              style="width:100%; height:400px; object-fit:cover; display:block;">
       </div>
 
@@ -259,7 +259,7 @@
 
       <!-- Right: image -->
       <div style="flex:1; min-width:0;">
-        <img src="/public/assets/images/uk-houses/uk-9.jpg" alt="How to Apply"
+        <img src="/public/assets/images/uk-houses/uk-12.jpg" alt="How to Apply"
              style="width:100%; height:420px; object-fit:cover; display:block;">
       </div>
 
@@ -332,29 +332,18 @@
 
     <form action="#" method="POST" style="max-width:860px; margin:0 auto;">
 
-      <div style="display:flex; gap:20px; margin-bottom:20px;">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
         <input type="text" name="name" placeholder="Name" required
-               style="flex:1; border:1px solid #dddddd; padding:14px 16px; font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#333; outline:none; box-sizing:border-box;">
+               style="width:100%; border:1px solid #dddddd; padding:14px 16px; font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#333; outline:none; box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email"
-               style="flex:1; border:1px solid #dddddd; padding:14px 16px; font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#333; outline:none; box-sizing:border-box;">
+               style="width:100%; border:1px solid #dddddd; padding:14px 16px; font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#333; outline:none; box-sizing:border-box;">
       </div>
 
-      <div style="display:flex; gap:20px; margin-bottom:20px;">
-        <!-- Date field with calendar icon -->
-        <div style="flex:1; position:relative;">
-          <input type="date" name="date" id="enquiryDate"
-                 style="width:100%; border:1px solid #dddddd; padding:14px 16px; font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#333; outline:none; box-sizing:border-box; appearance:none; -webkit-appearance:none; cursor:pointer;">
-          <div id="calIconBtn" onclick="document.getElementById('enquiryDate').showPicker ? document.getElementById('enquiryDate').showPicker() : document.getElementById('enquiryDate').click()"
-               style="position:absolute; right:14px; top:50%; transform:translateY(-50%); cursor:pointer; pointer-events:none;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="3" y="4" width="18" height="18" rx="2" stroke="var(--brand-primary)" stroke-width="1.8"/>
-              <path d="M3 9h18" stroke="var(--brand-primary)" stroke-width="1.8"/>
-              <path d="M8 2v4M16 2v4" stroke="var(--brand-primary)" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
-          </div>
-        </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
+        <input type="date" name="date" id="enquiryDate"
+               style="width:100%; border:1px solid #dddddd; padding:14px 16px; font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#333; outline:none; box-sizing:border-box; cursor:pointer;">
         <input type="tel" name="contact_number" placeholder="Contact Number"
-               style="flex:1; border:1px solid #dddddd; padding:14px 16px; font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#333; outline:none; box-sizing:border-box;">
+               style="width:100%; border:1px solid #dddddd; padding:14px 16px; font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#333; outline:none; box-sizing:border-box;">
       </div>
 
       <div style="margin-bottom:28px;">

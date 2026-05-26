@@ -2,7 +2,7 @@
 <section class="px-8 md:px-16 py-12">
   <div class="max-w-screen-xl mx-auto">
     <div class="relative rounded-lg overflow-hidden py-20 px-6 text-center"
-         style="background-image: url('/public/assets/images/tenants-bg.png'); background-size: cover; background-position: center;">
+         style="background-image: url('/public/assets/images/home-center2.jpg'); background-size: cover; background-position: center;">
 
       <!-- Teal overlay -->
       <div class="absolute inset-0" style="background-color: rgba(9, 79, 79, 0.78);"></div>

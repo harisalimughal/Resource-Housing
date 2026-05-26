@@ -25,6 +25,7 @@
     $totalPages = (int) ceil($totalCards / $perPage);
     // Flatten to the shape the template expects
     $props = array_map(fn($p) => [
+        'id'      => $p['id'],
         'title'   => $p['title'],
         'address' => $p['address'],
         'beds'    => $p['bedrooms'],
@@ -64,7 +65,7 @@
                 <?= $prop['baths'] ?> Bath
               </span>
             </div>
-            <a href="/src/pages/properties.php"
+            <a href="/src/pages/property-detail.php?id=<?= $prop['id'] ?>"
                style="display:block; background:var(--brand-primary); color:#ffffff; text-align:center;
                       padding:10px; font-family:'Abhaya Libre',serif; font-weight:600; font-size:0.9rem;
                       text-decoration:none; border-radius:0;">

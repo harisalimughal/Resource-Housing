@@ -94,6 +94,116 @@ function getProperties(): array {
             'bathrooms' => 3,
             'image'     => '/public/assets/images/home-center4.jpg',
         ],
+        [
+            'id'        => 9,
+            'title'     => 'Edgbaston, B15 3ES',
+            'address'   => 'Hagley Road, Birmingham',
+            'location'  => 'Birmingham',
+            'area'      => 'Edgbaston',
+            'type'      => 'Residential',
+            'bedrooms'  => 3,
+            'bathrooms' => 2,
+            'image'     => '/public/assets/images/uk-houses/uk-6.jpg',
+        ],
+        [
+            'id'        => 10,
+            'title'     => 'Ladywood, B16 8LP',
+            'address'   => 'Ladywood Middleway, Birmingham',
+            'location'  => 'Birmingham',
+            'area'      => 'Ladywood',
+            'type'      => 'HMO',
+            'bedrooms'  => 4,
+            'bathrooms' => 2,
+            'image'     => '/public/assets/images/uk-houses/uk-7.jpg',
+        ],
+        [
+            'id'        => 11,
+            'title'     => 'Bordesley Green, B9 4TR',
+            'address'   => 'Bordesley Green Road, Birmingham',
+            'location'  => 'Birmingham',
+            'area'      => 'Bordesley Green',
+            'type'      => 'HMO',
+            'bedrooms'  => 6,
+            'bathrooms' => 3,
+            'image'     => '/public/assets/images/uk-houses/uk-8.jpg',
+        ],
+        [
+            'id'        => 12,
+            'title'     => 'Hall Green, B28 0AE',
+            'address'   => 'Stratford Road, Birmingham',
+            'location'  => 'Birmingham',
+            'area'      => 'Hall Green',
+            'type'      => 'Residential',
+            'bedrooms'  => 4,
+            'bathrooms' => 2,
+            'image'     => '/public/assets/images/uk-houses/uk-11.jpg',
+        ],
+        [
+            'id'        => 13,
+            'title'     => 'Nechells, B7 5NN',
+            'address'   => 'Nechells Park Road, Birmingham',
+            'location'  => 'Birmingham',
+            'area'      => 'Nechells',
+            'type'      => 'HMO',
+            'bedrooms'  => 5,
+            'bathrooms' => 3,
+            'image'     => '/public/assets/images/uk-houses/uk-12.jpg',
+        ],
+        [
+            'id'        => 14,
+            'title'     => 'Small Heath, B10 0HJ',
+            'address'   => 'Coventry Road, Birmingham',
+            'location'  => 'Birmingham',
+            'area'      => 'Small Heath',
+            'type'      => 'HMO',
+            'bedrooms'  => 4,
+            'bathrooms' => 2,
+            'image'     => '/public/assets/images/uk-houses/uk-13.jpg',
+        ],
+        [
+            'id'        => 15,
+            'title'     => 'Greenwich, SE10 8NF',
+            'address'   => 'Greenwich High Road, London',
+            'location'  => 'London',
+            'area'      => 'Greenwich',
+            'type'      => 'HMO',
+            'bedrooms'  => 4,
+            'bathrooms' => 2,
+            'image'     => '/public/assets/images/uk-houses/uk-1.jpg',
+        ],
+        [
+            'id'        => 16,
+            'title'     => 'Islington, N1 9AP',
+            'address'   => 'Upper Street, London',
+            'location'  => 'London',
+            'area'      => 'Islington',
+            'type'      => 'HMO',
+            'bedrooms'  => 5,
+            'bathrooms' => 3,
+            'image'     => '/public/assets/images/uk-houses/uk-2.jpg',
+        ],
+        [
+            'id'        => 17,
+            'title'     => 'Camden, NW1 8QP',
+            'address'   => 'Camden High Street, London',
+            'location'  => 'London',
+            'area'      => 'Camden',
+            'type'      => 'Residential',
+            'bedrooms'  => 3,
+            'bathrooms' => 2,
+            'image'     => '/public/assets/images/uk-houses/uk-3.jpg',
+        ],
+        [
+            'id'        => 18,
+            'title'     => 'Hackney, E8 1DY',
+            'address'   => 'Mare Street, London',
+            'location'  => 'London',
+            'area'      => 'Hackney',
+            'type'      => 'HMO',
+            'bedrooms'  => 6,
+            'bathrooms' => 3,
+            'image'     => '/public/assets/images/uk-houses/uk-4.jpg',
+        ],
     ];
 }
 
@@ -119,16 +229,19 @@ function paginateProperties(array $properties, int $page = 1, int $perPage = 4):
 // Filter by area, type, min bedrooms, min bathrooms
 function filterProperties(array $properties, array $filters): array {
     return array_values(array_filter($properties, function ($p) use ($filters) {
+        if (!empty($filters['location']) && $filters['location'] !== 'all') {
+            if (strtolower($p['location']) !== strtolower($filters['location'])) return false;
+        }
         if (!empty($filters['area']) && $filters['area'] !== 'all') {
             if (strtolower($p['area']) !== strtolower($filters['area'])) return false;
         }
         if (!empty($filters['type']) && $filters['type'] !== 'all') {
             if (strtolower($p['type']) !== strtolower($filters['type'])) return false;
         }
-        if (!empty($filters['bedrooms_min']) && $p['bedrooms'] < (int)$filters['bedrooms_min']) {
+        if (!empty($filters['bedrooms_min']) && $p['bedrooms'] !== (int)$filters['bedrooms_min']) {
             return false;
         }
-        if (!empty($filters['bathrooms_min']) && $p['bathrooms'] < (int)$filters['bathrooms_min']) {
+        if (!empty($filters['bathrooms_min']) && $p['bathrooms'] !== (int)$filters['bathrooms_min']) {
             return false;
         }
         return true;
