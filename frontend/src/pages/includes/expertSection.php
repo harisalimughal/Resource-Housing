@@ -4,7 +4,7 @@
   <!-- Background image with teal overlay -->
   <img src="/public/assets/images/uk-houses/uk-9.jpg"
        alt="" aria-hidden="true"
-       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.2; pointer-events:none;">
+       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.45; pointer-events:none;">
 
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1; display:flex; align-items:center; gap:72px;">
 
@@ -74,29 +74,46 @@
 
 <style>
   .expert-stat {
+    width: 175px;
+    height: 145px;
+    flex: 0 0 175px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 22px 32px;
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.18);
-    backdrop-filter: blur(16px) saturate(1.4);
-    -webkit-backdrop-filter: blur(16px) saturate(1.4);
-    flex: 1;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    /* Frosted glass */
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.28);
+    backdrop-filter: blur(14px) saturate(1.6);
+    -webkit-backdrop-filter: blur(14px) saturate(1.6);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.30),
+      inset 1px 0 0 rgba(255,255,255,0.15),
+      0 4px 24px rgba(0,0,0,0.15);
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .expert-stat:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.30),
+      inset 1px 0 0 rgba(255,255,255,0.15),
+      0 12px 36px rgba(0,0,0,0.22);
+  }
+  /* Top-left shine streak */
   .expert-stat::before {
     content: '';
     position: absolute;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,255,0.18) 0%, transparent 70%);
-    top: 50%;
+    top: -40px;
     right: -20px;
-    transform: translateY(-50%);
-    filter: blur(18px);
+    width: 80px;
+    height: 200px;
+    background: rgba(255,255,255,0.07);
+    transform: rotate(25deg);
     pointer-events: none;
   }
 
