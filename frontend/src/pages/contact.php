@@ -26,10 +26,10 @@
   <div style="position:absolute; inset:0; background:rgba(0,0,0,0.70);"></div>
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1; width:100%;">
     <div style="max-width:680px;">
-      <h1 style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
+      <h1 class="hero-anim-left hero-d1" style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
         Resource Housing Ltd.
       </h1>
-      <p style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:560px;">
+      <p class="hero-anim-left hero-d2" style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:560px;">
         We are here to help you find what sits right for you. With properties and internationally, we are here to accommodate for your needs.
       </p>
     </div>
@@ -42,7 +42,7 @@
     <div style="display:flex; align-items:flex-start; gap:80px;">
 
       <!-- Left: info -->
-      <div style="flex:0 0 340px;">
+      <div data-animate="fade-left" style="flex:0 0 340px;">
         <h2 style="font-family:'Abhaya Libre',serif; font-size:2.6rem; font-weight:700; line-height:1.2; margin:0 0 20px;">
           <span style="color:#111111;">Get in touch<br></span>
           <span style="color:var(--brand-primary);">with us.</span>
@@ -77,7 +77,7 @@
       </div>
 
       <!-- Right: form -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-right" style="flex:1; min-width:0;">
         <form id="contactForm" action="#" method="POST">
 
           <div style="display:flex; gap:16px; margin-bottom:16px;">
@@ -137,7 +137,7 @@
 
 <!-- ===== MAP ===== -->
 <section class="w-full" style="padding:0 0 80px; height:560px;">
-  <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="height:100%;">
+  <div class="max-w-screen-xl mx-auto px-8 md:px-16" data-animate="fade-up" style="height:100%;">
     <iframe
       src="https://maps.google.com/maps?q=1250+Coventry+Road+Birmingham+B25+8BJ+UK&t=&z=15&ie=UTF8&iwloc=&output=embed"
       width="100%" height="100%" style="border:0; display:block; min-height:480px;" allowfullscreen="" loading="lazy"

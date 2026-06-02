@@ -8,7 +8,7 @@
       <div class="absolute inset-0" style="background-color: rgba(9, 79, 79, 0.78);"></div>
 
       <!-- Content -->
-      <div class="relative z-10 max-w-xl mx-auto">
+      <div class="relative z-10 max-w-xl mx-auto" data-animate="zoom-in">
         <h2 class="text-white text-4xl font-bold mb-4" style="font-family:'Abhaya Libre',serif;">
           Become a Tenants
         </h2>

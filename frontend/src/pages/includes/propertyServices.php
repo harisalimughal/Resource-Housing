@@ -3,11 +3,11 @@
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
 
     <!-- Section header -->
-    <p class="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style="color:#aaa; font-family:'Abhaya Libre',serif;">What We Provide</p>
-    <h2 class="text-4xl md:text-5xl font-bold mb-12" style="color: var(--brand-primary); font-family:'Abhaya Libre',serif;">Property Services</h2>
+    <p class="text-xs font-semibold tracking-[0.2em] uppercase mb-3" data-animate="fade-up" style="color:#aaa; font-family:'Abhaya Libre',serif;">What We Provide</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-12" data-animate="fade-up" data-animate-delay="100" style="color: var(--brand-primary); font-family:'Abhaya Libre',serif;">Property Services</h2>
 
     <!-- Cards grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 items-start" style="gap:24px;">
+    <div class="grid grid-cols-1 md:grid-cols-3 items-start" data-stagger="150" style="gap:24px;">
 
       <?php
       $cards = [
@@ -27,7 +27,7 @@
       foreach ($cards as $i => $card):
         $radius = '4px';
       ?>
-      <div class="service-card" style="width:377px; max-width:100%; height:451px; padding:30px; border:1px solid #094F4F80; border-radius:<?= $radius ?>; overflow:hidden;">
+      <div class="service-card" data-animate="fade-up" style="width:377px; max-width:100%; height:451px; padding:30px; border:1px solid #094F4F80; border-radius:<?= $radius ?>; overflow:hidden;">
         <div class="icon-box w-12 h-12 flex items-center justify-center mb-6" style="border-radius:4px;">
           <img src="/public/assets/images/house-black.svg" alt="<?= $card['title'] ?>" class="w-7 h-7 object-contain">
         </div>

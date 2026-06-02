@@ -11,27 +11,27 @@
     <!-- ===== LEFT: Text + Stats ===== -->
     <div style="flex:1; min-width:0;">
 
-      <h2 style="font-family:'Abhaya Libre',serif; font-size:3.4rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
+      <h2 data-animate="fade-left" style="font-family:'Abhaya Libre',serif; font-size:3.4rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
         The experts in local<br>and international<br>property
       </h2>
 
-      <p style="font-family:'Abhaya Libre',serif; font-size:1rem; color:rgba(255,255,255,0.75); line-height:1.7; margin:0 0 44px; max-width:460px;">
+      <p data-animate="fade-left" data-animate-delay="120" style="font-family:'Abhaya Libre',serif; font-size:1rem; color:rgba(255,255,255,0.75); line-height:1.7; margin:0 0 44px; max-width:460px;">
         More than 100 HMO and residential properties managed across Birmingham.
         Landlords and tenants choose Resource Housing because our standards are different.
       </p>
 
       <!-- Stats row -->
       <div style="display:flex; gap:12px;">
-        <div class="expert-stat">
-          <span class="expert-stat-num">300+</span>
+        <div class="expert-stat" data-animate="zoom-in" data-animate-delay="0">
+          <span class="expert-stat-num" data-count="300+">300+</span>
           <span class="expert-stat-label">Happy Customers</span>
         </div>
-        <div class="expert-stat">
-          <span class="expert-stat-num">900+</span>
+        <div class="expert-stat" data-animate="zoom-in" data-animate-delay="140">
+          <span class="expert-stat-num" data-count="900+">900+</span>
           <span class="expert-stat-label">Amazing Projects</span>
         </div>
-        <div class="expert-stat">
-          <span class="expert-stat-num">20+</span>
+        <div class="expert-stat" data-animate="zoom-in" data-animate-delay="280">
+          <span class="expert-stat-num" data-count="20+">20+</span>
           <span class="expert-stat-label">Awards Winning</span>
         </div>
       </div>
@@ -39,7 +39,7 @@
     </div>
 
     <!-- ===== RIGHT: Image grid + badge ===== -->
-    <div style="flex:1; min-width:0; position:relative;">
+    <div data-animate="fade-right" style="flex:1; min-width:0; position:relative;">
 
       <!-- Top image -->
       <img src="/public/assets/images/uk-houses/uk-5.jpg" alt="Property"

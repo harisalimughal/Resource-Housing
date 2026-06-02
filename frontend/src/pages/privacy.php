@@ -18,8 +18,8 @@
 <?php require __DIR__ . '/includes/header.php'; ?>
 
 <main class="max-w-screen-xl mx-auto px-8 md:px-16 py-20">
-  <h1 class="text-4xl font-bold mb-4" style="color: var(--brand-primary); font-family:'Abhaya Libre',serif;">Privacy Policy</h1>
-  <p class="text-gray-600 text-lg leading-relaxed max-w-2xl" style="font-family:'Abhaya Libre',serif;">
+  <h1 class="text-4xl font-bold mb-4" data-animate="fade-up" style="color: var(--brand-primary); font-family:'Abhaya Libre',serif;">Privacy Policy</h1>
+  <p class="text-gray-600 text-lg leading-relaxed max-w-2xl" data-animate="fade-up" data-animate-delay="120" style="font-family:'Abhaya Libre',serif;">
     Your privacy is important to us. This policy outlines how Resource Housing collects, uses, and protects your personal information.
   </p>
 </main>

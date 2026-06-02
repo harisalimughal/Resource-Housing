@@ -32,10 +32,10 @@
   <!-- Content -->
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1; width:100%;">
     <div style="max-width:700px;">
-      <h1 style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
+      <h1 class="hero-anim-left hero-d1" style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
         Stay Compliant.<br>Stay Protected.
       </h1>
-      <p style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:580px;">
+      <p class="hero-anim-left hero-d2" style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:580px;">
         We provide reliable, end-to-end compliance services to ensure your property meets safety regulations, protects occupants, and avoids costly risks. From inspections to certifications, we've got every detail covered.
       </p>
     </div>
@@ -49,7 +49,7 @@
     <div style="display:flex; align-items:center; gap:80px;">
 
       <!-- Left: text -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-left" style="flex:1; min-width:0;">
         <h2 style="font-family:'Abhaya Libre',serif; font-size:4rem; font-weight:700; line-height:1.15; margin:0 0 32px;">
           <span style="color:#111111;">How Does</span><br>
           <span style="color:var(--brand-primary);">Compliance Work?</span>
@@ -61,7 +61,7 @@
       </div>
 
       <!-- Right: image -->
-      <div style="flex:0 0 500px;">
+      <div data-animate="fade-right" style="flex:0 0 500px;">
         <img src="/public/assets/images/uk-houses/uk-5.jpg" alt="Property Compliance"
              style="width:100%; height:500px; object-fit:cover; display:block;">
       </div>
@@ -120,18 +120,18 @@ $complianceServices = [
 
     <!-- Heading block -->
     <div style="text-align:center; margin-bottom:56px;">
-      <h2 style="font-family:'Abhaya Libre',serif; font-size:3.6rem; font-weight:700; color:#ffffff; margin:0 0 20px; line-height:1.2;">
+      <h2 data-animate="fade-up" style="font-family:'Abhaya Libre',serif; font-size:3.6rem; font-weight:700; color:#ffffff; margin:0 0 20px; line-height:1.2;">
         Compliance Services You Can Trust
       </h2>
-      <p style="font-family:'Abhaya Libre',serif; font-size:1.1rem; color:rgba(255,255,255,0.78); line-height:1.75; margin:0 auto; max-width:640px;">
+      <p data-animate="fade-up" data-animate-delay="120" style="font-family:'Abhaya Libre',serif; font-size:1.1rem; color:rgba(255,255,255,0.78); line-height:1.75; margin:0 auto; max-width:640px;">
         Comprehensive safety checks, certifications, and maintenance solutions to keep your property fully compliant, secure, and operating without risk or disruption.
       </p>
     </div>
 
     <!-- Cards grid -->
-    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;" data-stagger="80">
       <?php foreach ($complianceServices as $s): ?>
-      <div class="compliance-card" style="background:#ffffff; display:flex; flex-direction:column;">
+      <div class="compliance-card" data-animate="fade-up" style="background:#ffffff; display:flex; flex-direction:column;">
         <div style="padding-top:3px;">
           <img src="<?= $s['img'] ?>" alt="<?= htmlspecialchars($s['title']) ?>"
                style="width:100%; height:200px; object-fit:cover; display:block;">

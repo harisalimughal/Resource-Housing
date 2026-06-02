@@ -25,7 +25,7 @@
     <div style="display:flex; align-items:center; gap:60px;">
 
       <!-- Left -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-left" style="flex:1; min-width:0;">
 <h1 style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#111111; line-height:1.15; margin:0 0 20px;">
           Welcome Home<br>with <span style="color:var(--brand-primary);">Resource<br>Housing</span>
         </h1>
@@ -39,7 +39,7 @@
       </div>
 
       <!-- Right: image -->
-      <div style="flex:0 0 480px;">
+      <div data-animate="fade-right" style="flex:0 0 480px;">
         <img src="/public/assets/images/uk-houses/uk-6.jpg" alt="Resource Housing"
              style="width:100%; height:380px; object-fit:cover; display:block;">
       </div>
@@ -52,16 +52,16 @@
 <section class="w-full py-20" style="background:#F8FAFC;">
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
 
-    <h2 style="font-family:'Abhaya Libre',serif; font-size:3.2rem; font-weight:700; color:#111111; text-align:center; margin:0 0 52px;">
+    <h2 data-animate="fade-up" style="font-family:'Abhaya Libre',serif; font-size:3.2rem; font-weight:700; color:#111111; text-align:center; margin:0 0 52px;">
       What Is <span style="color:var(--brand-primary);">Supported Accommodation?</span>
     </h2>
 
     <div style="display:flex; align-items:center; gap:60px;">
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-left" style="flex:1; min-width:0;">
         <img src="/public/assets/images/uk-houses/uk-7.jpg" alt="Supported Accommodation"
              style="width:100%; height:340px; object-fit:cover; display:block;">
       </div>
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-right" style="flex:1; min-width:0;">
         <p style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:#555555; line-height:1.8; margin:0;">
           Supported accommodation is housing where you have your own space and privacy, while also getting access to support from trained staff who can help you in your daily life. We work with people who may need extra support to cope with life's challenges. Support may include assistance with benefits and applications. At Resource Housing, we believe everyone deserves a safe and supportive place to live. Our team is here to ensure that wherever you are in your journey, you always have the guidance and encouragement you need. We are committed to helping you move forward confidently toward a stable and fulfilling life.
         </p>
@@ -76,9 +76,8 @@
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
     <div style="display:flex; align-items:center; gap:60px;">
 
-      <!-- Left: two stacked images -->
-      <!-- Left: 3 images — 2 on top row, 1 on bottom -->
-      <div style="flex:0 0 460px; display:flex; flex-direction:column; gap:10px;">
+      <!-- Left: three stacked images -->
+      <div data-animate="fade-left" style="flex:0 0 460px; display:flex; flex-direction:column; gap:10px;">
         <div style="display:flex; gap:10px;">
           <img src="/public/assets/images/uk-houses/uk-8.jpg" alt="Property"
                style="flex:1; min-width:0; height:210px; object-fit:cover; display:block;">
@@ -90,7 +89,7 @@
       </div>
 
       <!-- Right: text -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-right" style="flex:1; min-width:0;">
         <h2 style="font-family:'Abhaya Libre',serif; font-size:3.5rem; font-weight:700; color:#ffffff; margin:0 0 12px;">
           Who We Support
         </h2>
@@ -135,7 +134,7 @@
     <div style="display:flex; align-items:center; gap:60px;">
 
       <!-- Left: text -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-left" style="flex:1; min-width:0;">
         <h2 style="font-family:'Abhaya Libre',serif; font-size:3.5rem; font-weight:700; color:#111111; margin:0 0 16px;">
           Your <span style="color:var(--brand-primary);">Responsibilities</span>
         </h2>
@@ -167,7 +166,7 @@
       </div>
 
       <!-- Right: image -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-right" style="flex:1; min-width:0;">
         <img src="/public/assets/images/uk-houses/uk-2.jpg" alt="Responsibilities"
              style="width:100%; height:400px; object-fit:cover; display:block;">
       </div>
@@ -182,13 +181,13 @@
     <div style="display:flex; align-items:center; gap:60px;">
 
       <!-- Left: image -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-left" style="flex:1; min-width:0;">
         <img src="/public/assets/images/uk-houses/uk-15.jpg" alt="Our Responsibilities"
              style="width:100%; height:400px; object-fit:cover; display:block;">
       </div>
 
       <!-- Right: text -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-right" style="flex:1; min-width:0;">
         <h2 style="font-family:'Abhaya Libre',serif; font-size:3.5rem; font-weight:700; color:#111111; margin:0 0 16px;">
           Our <span style="color:var(--brand-primary);">Responsibilities</span>
         </h2>
@@ -230,7 +229,7 @@
     <div style="display:flex; align-items:center; gap:60px;">
 
       <!-- Left: steps -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-left" style="flex:1; min-width:0;">
         <h2 style="font-family:'Abhaya Libre',serif; font-size:3.5rem; font-weight:700; color:#111111; margin:0 0 28px;">
           How to <span style="color:var(--brand-primary);">Apply</span>
         </h2>
@@ -258,7 +257,7 @@
       </div>
 
       <!-- Right: image -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-right" style="flex:1; min-width:0;">
         <img src="/public/assets/images/uk-houses/uk-12.jpg" alt="How to Apply"
              style="width:100%; height:420px; object-fit:cover; display:block;">
       </div>
@@ -273,13 +272,13 @@
     <div style="display:flex; align-items:center; gap:60px;">
 
       <!-- Left: image -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-left" style="flex:1; min-width:0;">
         <img src="/public/assets/images/uk-houses/uk-10.jpg" alt="Contact"
              style="width:100%; height:380px; object-fit:cover; display:block;">
       </div>
 
       <!-- Right: contact info -->
-      <div style="flex:1; min-width:0;">
+      <div data-animate="fade-right" style="flex:1; min-width:0;">
         <h2 style="font-family:'Abhaya Libre',serif; font-size:3.5rem; font-weight:700; color:#ffffff; line-height:1.2; margin:0 0 16px;">
           Need More<br>Information?
         </h2>
@@ -323,14 +322,14 @@
 <section id="tenants-enquiry" class="w-full py-20" style="background:#F8FAFC;">
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
 
-    <h2 style="font-family:'Abhaya Libre',serif; font-size:3.5rem; font-weight:700; color:var(--brand-primary); text-align:center; margin:0 0 10px;">
+    <h2 data-animate="fade-up" style="font-family:'Abhaya Libre',serif; font-size:3.5rem; font-weight:700; color:var(--brand-primary); text-align:center; margin:0 0 10px;">
       Tenants Enquiry
     </h2>
-    <p style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:#777777; text-align:center; margin:0 0 48px;">
+    <p data-animate="fade-up" data-animate-delay="100" style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:#777777; text-align:center; margin:0 0 48px;">
       Partner with Resource Housing for guaranteed rent and hassle-free management.
     </p>
 
-    <form action="#" method="POST" style="max-width:860px; margin:0 auto;">
+    <form data-animate="fade-up" data-animate-delay="200" action="#" method="POST" style="max-width:860px; margin:0 auto;">
 
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
         <input type="text" name="name" placeholder="Name" required

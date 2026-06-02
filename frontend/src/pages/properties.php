@@ -49,10 +49,10 @@ $types = array_unique(array_column($all, 'type'));
        style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
   <div style="position:absolute; inset:0; background:rgba(0,0,0,0.62);"></div>
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1; width:100%;">
-    <h1 style="font-family:'Abhaya Libre',serif; font-size:3.8rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 16px;">
+    <h1 class="hero-anim-left hero-d1" style="font-family:'Abhaya Libre',serif; font-size:3.8rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 16px;">
       All Properties
     </h1>
-    <p style="font-family:'Abhaya Libre',serif; font-size:1.05rem; color:rgba(255,255,255,0.82); margin:0;">
+    <p class="hero-anim-left hero-d2" style="font-family:'Abhaya Libre',serif; font-size:1.05rem; color:rgba(255,255,255,0.82); margin:0;">
       Discover your perfect home from our extensive collection.
     </p>
   </div>
@@ -61,7 +61,7 @@ $types = array_unique(array_column($all, 'type'));
 <!-- ===== FILTER BAR ===== -->
 <section class="w-full bg-white py-10">
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
-    <form id="filterForm" method="GET" action="" style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+    <form id="filterForm" data-animate="fade-up" method="GET" action="" style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
 
       <?php
       $chevron = '<svg width="13" height="13" viewBox="0 0 20 20" fill="currentColor" style="flex-shrink:0;color:#888;"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>';
@@ -188,9 +188,9 @@ $types = array_unique(array_column($all, 'type'));
     </p>
     <?php else: ?>
 
-    <div class="prop-grid" style="display:grid; gap:20px; margin-bottom:32px;">
+    <div class="prop-grid" data-stagger="100" style="display:grid; gap:20px; margin-bottom:32px;">
       <?php foreach ($properties as $p): ?>
-      <div style="border:1px solid #e8e8e8; display:flex; flex-direction:column; background:#fff;">
+      <div data-animate="fade-up" style="border:1px solid #e8e8e8; display:flex; flex-direction:column; background:#fff;">
 
         <!-- Image -->
         <img src="<?= htmlspecialchars($p['image']) ?>" alt="<?= htmlspecialchars($p['title']) ?>"

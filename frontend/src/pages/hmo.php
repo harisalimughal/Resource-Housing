@@ -32,10 +32,10 @@
   <!-- Content -->
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1; width:100%;">
     <div style="max-width:680px;">
-      <h1 style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
+      <h1 class="hero-anim-left hero-d1" style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
         HMO (House In<br>Multiple Occupation)
       </h1>
-      <p style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:560px;">
+      <p class="hero-anim-left hero-d2" style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:560px;">
         At Resource Housing, we specialise in providing high-quality HMO (House In Multiple Occupation) properties. Here's what you need to know about our HMO services.
       </p>
     </div>
@@ -73,10 +73,10 @@ $hmoFeatures = [
 
     <?php
     $rows = [array_slice($hmoFeatures, 0, 3), array_slice($hmoFeatures, 3)];
-    foreach ($rows as $row): ?>
+    foreach ($rows as $ri => $row): ?>
 
     <!-- grid-template-columns: 1fr 1px 1fr 1px 1fr | grid-template-rows: heading | body -->
-    <div style="display:grid; grid-template-columns:1fr 1px 1fr 1px 1fr; grid-template-rows:auto auto;">
+    <div data-animate="fade-up" data-animate-delay="<?= $ri * 150 ?>" style="display:grid; grid-template-columns:1fr 1px 1fr 1px 1fr; grid-template-rows:auto auto;">
 
       <?php foreach ($row as $col => $f):
         $gcol  = $col * 2 + 1;
@@ -151,10 +151,10 @@ $suppFeatures = [
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
 
     <!-- Heading -->
-    <h2 style="font-family:'Abhaya Libre',serif; font-size:3.8rem; font-weight:700; color:#ffffff; text-align:center; margin:0 0 20px;">
+    <h2 data-animate="fade-up" style="font-family:'Abhaya Libre',serif; font-size:3.8rem; font-weight:700; color:#ffffff; text-align:center; margin:0 0 20px;">
       Supported Accommodation
     </h2>
-    <p style="font-family:'Abhaya Libre',serif; font-size:1.1rem; color:rgba(255,255,255,0.78); text-align:center; line-height:1.75; margin:0 auto 64px; max-width:700px;">
+    <p data-animate="fade-up" data-animate-delay="100" style="font-family:'Abhaya Libre',serif; font-size:1.1rem; color:rgba(255,255,255,0.78); text-align:center; line-height:1.75; margin:0 auto 64px; max-width:700px;">
       Resource Housing also offers supported accommodation services designed to provide additional support to individuals with specific needs or vulnerabilities. Here's what you can expect from our supported accommodation:
     </p>
 
@@ -162,7 +162,7 @@ $suppFeatures = [
     <?php $suppRows = [array_slice($suppFeatures, 0, 3), array_slice($suppFeatures, 3)];
     foreach ($suppRows as $ri => $row): ?>
 
-    <div style="display:grid; grid-template-columns:1fr 1px 1fr 1px 1fr; grid-template-rows:auto auto; <?= $ri === 1 ? 'margin-top:48px;' : '' ?>">
+    <div data-animate="fade-up" data-animate-delay="<?= $ri * 150 ?>" style="display:grid; grid-template-columns:1fr 1px 1fr 1px 1fr; grid-template-rows:auto auto; <?= $ri === 1 ? 'margin-top:48px;' : '' ?>">
 
       <?php foreach ($row as $col => $f):
         $gcol = $col * 2 + 1;
@@ -200,7 +200,7 @@ $suppFeatures = [
     <?php endforeach; ?>
 
     <!-- Bottom closing text -->
-    <p style="font-family:'Abhaya Libre',serif; font-size:1rem; color:rgba(255,255,255,0.75); text-align:center; line-height:1.8; margin:64px auto 0; max-width:820px;">
+    <p data-animate="fade-up" style="font-family:'Abhaya Libre',serif; font-size:1rem; color:rgba(255,255,255,0.75); text-align:center; line-height:1.8; margin:64px auto 0; max-width:820px;">
       At Resource Housing, We Are Dedicated To Providing Safe, Comfortable, And Supportive Living Environments For All Our Tenants. Whether They Are Seeking An HMO Property Or Supported Accommodation. Your Well-Being And Satisfaction Are Our Top Priorities.
     </p>
 

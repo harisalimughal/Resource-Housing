@@ -7,16 +7,16 @@
 
       <!-- Heading -->
       <div class="flex-1">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-black" style="font-family:'Abhaya Libre',serif;">
+        <h1 class="hero-anim-left hero-d1 text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-black" style="font-family:'Abhaya Libre',serif;">
           Your Home, Your<br>Investment
         </h1>
-        <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight" style="font-family:'Abhaya Libre',serif; color: var(--brand-primary);">
+        <h2 class="hero-anim-left hero-d2 text-5xl md:text-6xl lg:text-7xl font-bold leading-tight" style="font-family:'Abhaya Libre',serif; color: var(--brand-primary);">
           Your Peace of Mind
         </h2>
       </div>
 
       <!-- Sub-text -->
-      <div class="md:max-w-xs lg:max-w-sm">
+      <div class="hero-anim-right hero-d3 md:max-w-xs lg:max-w-sm">
         <p class="text-black text-base leading-relaxed" style="font-family:'Abhaya Libre',serif;">
           Whether you're looking for a quality home or a<br>
           reliable partner to manage your property,<br>
@@ -41,7 +41,7 @@
     </button>
 
     <!-- Outer wrapper: relative + no overflow so badge can straddle the bottom edge -->
-    <div class="relative" style="width:1170px; max-width:100%; height:401px;">
+    <div class="hero-anim hero-d4 relative" style="width:1170px; max-width:100%; height:401px;">
 
       <!-- Inner slides container: clips slides only -->
       <div class="absolute inset-0 overflow-hidden">

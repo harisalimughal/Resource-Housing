@@ -1,0 +1,74 @@
+/* =========================================================
+   Resource Housing — Animation System
+   =========================================================
+   1. Scroll-triggered: add [data-animate] to any element.
+      JS adds .is-visible when it enters the viewport.
+   2. Hero page-load: use .hero-anim-* classes directly.
+   3. Counter: add [data-count="300+"] to any number span.
+   ========================================================= */
+
+/* ── Scroll-triggered base ───────────────────────────── */
+[data-animate] {
+  opacity: 0;
+  transition:
+    opacity  0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+[data-animate].is-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Direction variants */
+[data-animate="fade-up"]    { transform: translateY(40px);  }
+[data-animate="fade-down"]  { transform: translateY(-40px); }
+[data-animate="fade-left"]  { transform: translateX(-52px); }
+[data-animate="fade-right"] { transform: translateX(52px);  }
+[data-animate="fade-in"]    { /* opacity only */ }
+[data-animate="zoom-in"]    { transform: scale(0.87);       }
+
+/* Skip all animations when reduced-motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ── Hero page-load keyframes ────────────────────────── */
+@keyframes rh-slide-up {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+@keyframes rh-slide-left {
+  from { opacity: 0; transform: translateX(-52px); }
+  to   { opacity: 1; transform: translateX(0);     }
+}
+@keyframes rh-slide-right {
+  from { opacity: 0; transform: translateX(52px); }
+  to   { opacity: 1; transform: translateX(0);    }
+}
+@keyframes rh-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.hero-anim       { animation: rh-slide-up    0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-anim-left  { animation: rh-slide-left  0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-anim-right { animation: rh-slide-right 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.hero-anim-fade  { animation: rh-fade-in     0.9s ease both; }
+
+.hero-d1 { animation-delay: 0.05s; }
+.hero-d2 { animation-delay: 0.20s; }
+.hero-d3 { animation-delay: 0.35s; }
+.hero-d4 { animation-delay: 0.50s; }
+.hero-d5 { animation-delay: 0.65s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim,
+  .hero-anim-left,
+  .hero-anim-right,
+  .hero-anim-fade { animation: none !important; }
+}

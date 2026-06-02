@@ -90,7 +90,7 @@ $_navPage   = 'properties.php';
     <div class="det-layout">
 
       <!-- LEFT: Gallery -->
-      <div class="det-gallery">
+      <div class="det-gallery" data-animate="fade-left">
         <img id="mainImg" src="<?= htmlspecialchars($property['image']) ?>" alt="<?= htmlspecialchars($property['title']) ?>"
              style="width:100%; height:340px; object-fit:cover; display:block; margin-bottom:10px;">
         <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;">
@@ -108,7 +108,7 @@ $_navPage   = 'properties.php';
       </div>
 
       <!-- RIGHT: Details -->
-      <div class="det-details">
+      <div class="det-details" data-animate="fade-right">
 
         <h1 class="det-title" style="font-family:'Abhaya Libre',serif; font-weight:800; color:#111111; margin:0 0 10px; line-height:1.2;">
           <?= htmlspecialchars($property['title']) ?>
@@ -223,8 +223,8 @@ $_navPage   = 'properties.php';
 <section class="w-full bg-white" style="padding:64px 0; border-top:1px solid #f0f0f0;">
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
 
-    <p style="font-family:'Abhaya Libre',serif; font-size:0.75rem; font-weight:700; color:var(--brand-primary); letter-spacing:0.12em; text-transform:uppercase; margin:0 0 6px;">FEATURED LISTING</p>
-    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:32px;" class="sim-header">
+    <p data-animate="fade-up" style="font-family:'Abhaya Libre',serif; font-size:0.75rem; font-weight:700; color:var(--brand-primary); letter-spacing:0.12em; text-transform:uppercase; margin:0 0 6px;">FEATURED LISTING</p>
+    <div data-animate="fade-up" data-animate-delay="100" style="display:flex; align-items:center; justify-content:space-between; margin-bottom:32px;" class="sim-header">
       <h2 style="font-family:'Abhaya Libre',serif; font-size:2.9rem; font-weight:800; color:#111111; margin:0;">Similar Properties</h2>
       <a href="/src/pages/properties.php"
          style="background:var(--brand-primary); color:#ffffff; font-family:'Abhaya Libre',serif; font-weight:600; font-size:0.9rem; padding:10px 24px; text-decoration:none; border:1.5px solid var(--brand-primary);">

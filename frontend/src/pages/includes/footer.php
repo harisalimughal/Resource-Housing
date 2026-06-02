@@ -153,4 +153,5 @@
   }
 </style>
 
+<script src="/public/assets/js/animations.js"></script>
 <script src="/public/assets/js/main.js"></script>
