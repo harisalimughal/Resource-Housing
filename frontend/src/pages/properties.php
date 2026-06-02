@@ -11,7 +11,7 @@ $filters = [
     'bathrooms_min' => $_GET['baths']    ?? '',
 ];
 $page    = max(1, (int)($_GET['page'] ?? 1));
-$perPage = 3;
+$perPage = 4;
 
 $all        = getProperties();
 $filtered   = filterProperties($all, $filters);
@@ -197,33 +197,33 @@ $types = array_unique(array_column($all, 'type'));
              style="width:100%; height:190px; object-fit:cover; display:block; flex-shrink:0;">
 
         <!-- Info -->
-        <div style="padding:16px 18px 20px; flex:1; display:flex; flex-direction:column;">
-          <h3 style="font-family:'Abhaya Libre',serif; font-size:1.1rem; font-weight:700; color:#111111; margin:0 0 6px;">
+        <div style="padding:22px 22px 22px; flex:1; display:flex; flex-direction:column;">
+          <h3 style="font-family:'Abhaya Libre',serif; font-size:1.4rem; font-weight:800; color:#111111; margin:0 0 8px; line-height:1.2;">
             <?= htmlspecialchars($p['title']) ?>
           </h3>
-          <p style="font-family:'Abhaya Libre',serif; font-size:0.85rem; color:#888888; margin:0 0 14px; line-height:1.4;">
+          <p style="font-family:'Abhaya Libre',serif; font-size:0.9rem; color:#888888; margin:0 0 18px; line-height:1.4;">
             <?= htmlspecialchars($p['address']) ?>
           </p>
 
           <!-- Beds + Baths -->
-          <div style="display:flex; align-items:center; gap:20px; margin-bottom:16px;">
-            <div style="display:flex; align-items:center; gap:6px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 12V7a1 1 0 011-1h16a1 1 0 011 1v5M3 12v5h18v-5M3 12h18M7 12V9h4v3" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <svg width="22" height="18" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 25V13M1 13V3a1 1 0 011-1h30a1 1 0 011 1v10M1 13h32M33 13v12M1 25h32M7 13V8h8v5" stroke="var(--brand-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span style="font-family:'Abhaya Libre',serif; font-size:0.88rem; color:#555;"><?= $p['bedrooms'] ?> Beds</span>
+              <span style="font-family:'Abhaya Libre',serif; font-size:1rem; color:#444;"><?= $p['bedrooms'] ?> Beds</span>
             </div>
-            <div style="display:flex; align-items:center; gap:6px;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 12h16v3a5 5 0 01-5 5H9a5 5 0 01-5-5v-3zM6 12V6a3 3 0 013-3h1a2 2 0 012 2v1" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <svg width="20" height="18" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 14h28v5a9 9 0 01-9 9H11a9 9 0 01-9-9v-5zM6 14V6a5 5 0 0110 0v8" stroke="var(--brand-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <span style="font-family:'Abhaya Libre',serif; font-size:0.88rem; color:#555;"><?= $p['bathrooms'] ?> Bath</span>
+              <span style="font-family:'Abhaya Libre',serif; font-size:1rem; color:#444;"><?= $p['bathrooms'] ?> Bath</span>
             </div>
           </div>
 
           <!-- Button -->
           <a href="/src/pages/property-detail.php?id=<?= $p['id'] ?>" class="prop-view-btn"
-             style="display:block; text-align:center; background:var(--brand-primary); color:#ffffff; font-family:'Abhaya Libre',serif; font-weight:600; font-size:0.9rem; padding:11px 16px; text-decoration:none; border:1.5px solid var(--brand-primary); margin-top:auto; transition:background 0.25s ease, color 0.25s ease;">
+             style="display:block; text-align:center; background:var(--brand-primary); color:#ffffff; font-family:'Abhaya Libre',serif; font-weight:600; font-size:1rem; padding:14px 16px; text-decoration:none; border:1.5px solid var(--brand-primary); margin-top:auto; transition:background 0.25s ease, color 0.25s ease;">
             View Property
           </a>
         </div>
@@ -268,9 +268,10 @@ $types = array_unique(array_column($all, 'type'));
   select:focus { border-color: var(--brand-primary); outline:none; }
   button[type="submit"]:hover { background:#ffffff !important; color:#000000 !important; }
 
-  /* Responsive grid: 1 col mobile, 3 col desktop */
+  /* Responsive grid: 1 col mobile, 2 col tablet, 4 col desktop */
   .prop-grid { grid-template-columns: 1fr; }
-  @media (min-width: 768px) { .prop-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 640px)  { .prop-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .prop-grid { grid-template-columns: repeat(4, 1fr); } }
 </style>
 
 </body>

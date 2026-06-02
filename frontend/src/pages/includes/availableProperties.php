@@ -44,30 +44,30 @@
                style="width:100%; height:362px; object-fit:cover; display:block; flex-shrink:0;">
 
           <!-- Panel in normal flow below image -->
-          <div class="prop-hover-panel" style="background:#ffffff; padding:16px 22px 28px 22px;">
-            <h3 style="font-family:'Abhaya Libre',serif; font-weight:700; font-size:1.1rem; color:#111111; margin:0 0 2px;">
+          <div class="prop-hover-panel" style="background:#ffffff; padding:20px 22px 22px 22px;">
+            <h3 style="font-family:'Abhaya Libre',serif; font-weight:800; font-size:1.4rem; color:#111111; margin:0 0 8px; line-height:1.2;">
               <?= htmlspecialchars($prop['title']) ?>
             </h3>
-            <p style="font-family:'Abhaya Libre',serif; font-size:0.82rem; color:#777777; margin:0 0 10px;">
+            <p style="font-family:'Abhaya Libre',serif; font-size:0.9rem; color:#777777; margin:0 0 16px; line-height:1.4;">
               <?= htmlspecialchars($prop['address']) ?>
             </p>
-            <div style="display:flex; align-items:center; justify-content:center; gap:22px; margin-bottom:12px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:18px;">
               <span class="prop-meta-item">
-                <svg width="18" height="14" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px; flex-shrink:0;">
-                  <path d="M1 15V5a2 2 0 012-2h16a2 2 0 012 2v10M1 9h20M1 15h20M7 9V6a1 1 0 011-1h6a1 1 0 011 1v3" stroke="var(--brand-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="22" height="18" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:8px; flex-shrink:0;">
+                  <path d="M1 25V13M1 13V3a1 1 0 011-1h30a1 1 0 011 1v10M1 13h32M33 13v12M1 25h32M7 13V8h8v5" stroke="var(--brand-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <?= $prop['beds'] ?> Beds
               </span>
               <span class="prop-meta-item">
-                <svg width="18" height="16" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:5px; flex-shrink:0;">
-                  <path d="M3 10h16v2a6 6 0 01-6 6H9a6 6 0 01-6-6v-2zM3 10V3a2 2 0 014 0v7" stroke="var(--brand-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="20" height="18" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:8px; flex-shrink:0;">
+                  <path d="M2 14h28v5a9 9 0 01-9 9H11a9 9 0 01-9-9v-5zM6 14V6a5 5 0 0110 0v8" stroke="var(--brand-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <?= $prop['baths'] ?> Bath
               </span>
             </div>
             <a href="/src/pages/property-detail.php?id=<?= $prop['id'] ?>"
                style="display:block; background:var(--brand-primary); color:#ffffff; text-align:center;
-                      padding:10px; font-family:'Abhaya Libre',serif; font-weight:600; font-size:0.9rem;
+                      padding:13px; font-family:'Abhaya Libre',serif; font-weight:600; font-size:1rem;
                       text-decoration:none; border-radius:0;">
               View Property
             </a>
@@ -109,8 +109,8 @@
     transition: height 0.35s ease, transform 0.35s ease;
   }
   .prop-card:hover {
-    height: 542px;
-    transform: translateY(-180px);
+    height: 580px;
+    transform: translateY(-218px);
   }
   .prop-hover-panel {
     flex-shrink: 0;

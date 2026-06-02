@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:github.com)",
       "Bash(Remove-Item \"c:\\\\Users\\\\HPv\\\\Documents\\\\Resource-Housing\\\\frontend\\\\src\\\\pages\\\\tenants.php\")",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/harisalimughal/ark-housing/main/frontend/src/pages/blog-detail.php\")"
     ]
   }
 }

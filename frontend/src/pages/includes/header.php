@@ -5,6 +5,7 @@ $_isServices = in_array($_navPage, ["propert-managment.php", "hmo.php", "complia
 $_isProps    = ($_navPage === "properties.php");
 $_isAbout    = ($_navPage === "about.php");
 $_isContact  = ($_navPage === "contact.php");
+$_isBlogs    = ($_navPage === "blogs.php");
 ?>
 <!-- ===== HEADER ===== -->
 <header id="mainHeader" style="background-color: var(--brand-primary); position:sticky; top:0; z-index:100;" class="w-full">
@@ -37,6 +38,7 @@ $_isContact  = ($_navPage === "contact.php");
 
       <a href="/src/pages/properties.php" class="header-nav-link <?= $_isProps   ? 'font-bold' : '' ?>">Properties</a>
       <a href="/src/pages/about.php"      class="header-nav-link <?= $_isAbout   ? 'font-bold' : '' ?>">About Us</a>
+      <a href="/src/pages/blogs.php"      class="header-nav-link <?= $_isBlogs   ? 'font-bold' : '' ?>">Blogs</a>
       <a href="/src/pages/contact.php"    class="header-nav-link <?= $_isContact ? 'font-bold' : '' ?>">Contact Us</a>
     </nav>
 

@@ -48,6 +48,7 @@
           <li><a href="/src/pages/index.php"   class="footer-link">Home</a></li>
           <li><a href="/src/pages/about.php"   class="footer-link">About Us</a></li>
           <li><a href="/src/pages/hmo.php"     class="footer-link">HMO Services</a></li>
+          <li><a href="/src/pages/blogs.php"   class="footer-link">Blogs</a></li>
         </ul>
       </div>
 

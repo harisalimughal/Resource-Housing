@@ -30,6 +30,7 @@
     </div>
 
     <!-- Flow text -->
+    <?php /*
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
       <p class="text-center text-sm" style="color:rgba(255,255,255,0.75); font-family:'Abhaya Libre',serif;">
         Contact Us &rarr; Property Assessment &rarr; Guaranteed<br>Long Term Rent &rarr; Full Management
@@ -38,6 +39,7 @@
         Browse &rarr; Apply &rarr; Move In &rarr; Support
       </p>
     </div>
+    */ ?>
 
     <!-- 8 Cards: row1 = Contact Us, Property Assessment, Browse, Apply; row2 = Guaranteed, Full Mgmt, Move In, Support -->
     <?php

@@ -56,7 +56,8 @@
     transition: background-color 0.3s ease;
     cursor: default;
   }
-  .service-card .icon-box        { background-color: #ffffff; border: 1.5px solid rgba(9,79,79,0.18); }
+  .service-card .icon-box        { background-color: var(--brand-primary); border: 1.5px solid var(--brand-primary); }
+  .service-card .icon-box img    { filter: brightness(0) invert(1); }
   .service-card .card-title      { color: #111111; }
   .service-card .card-text       { color: #4b5563; }
   .service-card .check-circle    { fill: var(--brand-primary); }
@@ -64,6 +65,7 @@
   /* Hover state */
   .service-card:hover                    { background-color: var(--brand-primary); border-color: var(--brand-primary) !important; }
   .service-card:hover .icon-box          { background-color: #ffffff; border-color: transparent; }
+  .service-card:hover .icon-box img      { filter: none; }
   .service-card:hover .card-title        { color: #ffffff; }
   .service-card:hover .card-text         { color: rgba(255,255,255,0.88); }
   .service-card:hover .check-circle      { fill: #ffffff; }
