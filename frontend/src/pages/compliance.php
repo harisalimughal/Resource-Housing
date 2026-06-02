@@ -20,7 +20,7 @@
 <main>
 
 <!-- ===== HERO SECTION ===== -->
-<section style="position:relative; width:100%; min-height:580px; display:flex; align-items:center; overflow:hidden;">
+<section class="hero-bleed" style="position:relative; width:100%; min-height:580px; display:flex; align-items:center; overflow:hidden;">
 
   <!-- Background image -->
   <img src="/public/assets/images/uk-houses/uk-4.jpg" alt="Property Compliance"
@@ -156,6 +156,20 @@ $complianceServices = [
   .compliance-card:hover { background: var(--brand-primary) !important; }
   .compliance-card:hover h3 { color: #ffffff !important; }
   .compliance-card:hover p  { color: #ffffff !important; }
+
+  @media (max-width: 767px) {
+    /* Shrink hero */
+    section[style*="min-height:580px"] { min-height:280px !important; }
+    h1[style*="font-size:4.2rem"] { font-size:2rem !important; }
+    /* How it works: stack */
+    div[style*="display:flex; align-items:center; gap:80px"] { flex-direction:column !important; gap:24px !important; }
+    div[style*="flex:0 0 500px"] { flex:unset !important; width:100% !important; }
+    img[style*="height:500px"] { height:220px !important; }
+    h2[style*="font-size:4rem"] { font-size:2rem !important; }
+    /* Services grid: 2 columns */
+    div[style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns:1fr 1fr !important; }
+    h2[style*="font-size:3.6rem"] { font-size:1.8rem !important; }
+  }
 </style>
 
 </main>

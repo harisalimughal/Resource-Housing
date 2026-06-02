@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $pageTitle = 'Resource Housing - Your Home, Your Investment';
 ?>
 <!DOCTYPE html>

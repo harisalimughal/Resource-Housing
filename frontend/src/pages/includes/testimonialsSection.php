@@ -117,3 +117,16 @@ $testimonials = [
   next.addEventListener('click', function(){ goTo(current + 1); });
 })();
 </script>
+
+<style>
+  @media (max-width: 767px) {
+    /* Stack left/right */
+    section[style*="background:#f7f7f5"] > div > div[style*="display:flex"] { flex-direction:column !important; gap:32px !important; }
+    /* Left panel: shrink fixed width */
+    section[style*="background:#f7f7f5"] div[style*="flex:0 0 360px"] { flex:unset !important; width:100% !important; }
+    /* Shrink heading */
+    section[style*="background:#f7f7f5"] h2 { font-size:2rem !important; }
+    /* Shrink quote marks */
+    section[style*="background:#f7f7f5"] div[style*="font-size:8rem"] { font-size:4rem !important; height:36px !important; }
+  }
+</style>

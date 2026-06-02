@@ -11,7 +11,7 @@ $filters = [
     'bathrooms_min' => $_GET['baths']    ?? '',
 ];
 $page    = max(1, (int)($_GET['page'] ?? 1));
-$perPage = 8;
+$perPage = 3;
 
 $all        = getProperties();
 $filtered   = filterProperties($all, $filters);
@@ -44,7 +44,7 @@ $types = array_unique(array_column($all, 'type'));
 <main>
 
 <!-- ===== HERO ===== -->
-<section style="position:relative; width:100%; min-height:300px; display:flex; align-items:center; overflow:hidden;">
+<section class="hero-bleed" style="position:relative; width:100%; min-height:300px; display:flex; align-items:center; overflow:hidden;">
   <img src="/public/assets/images/uk-houses/uk-5.jpg" alt="All Properties"
        style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
   <div style="position:absolute; inset:0; background:rgba(0,0,0,0.62);"></div>
@@ -188,7 +188,7 @@ $types = array_unique(array_column($all, 'type'));
     </p>
     <?php else: ?>
 
-    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-bottom:32px;">
+    <div class="prop-grid" style="display:grid; gap:20px; margin-bottom:32px;">
       <?php foreach ($properties as $p): ?>
       <div style="border:1px solid #e8e8e8; display:flex; flex-direction:column; background:#fff;">
 
@@ -267,6 +267,10 @@ $types = array_unique(array_column($all, 'type'));
   .prop-view-btn:hover { background:#ffffff !important; color:#000000 !important; }
   select:focus { border-color: var(--brand-primary); outline:none; }
   button[type="submit"]:hover { background:#ffffff !important; color:#000000 !important; }
+
+  /* Responsive grid: 1 col mobile, 3 col desktop */
+  .prop-grid { grid-template-columns: 1fr; }
+  @media (min-width: 768px) { .prop-grid { grid-template-columns: repeat(3, 1fr); } }
 </style>
 
 </body>

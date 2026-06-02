@@ -68,4 +68,11 @@
   .service-card:hover .card-text         { color: rgba(255,255,255,0.88); }
   .service-card:hover .check-circle      { fill: #ffffff; }
   .service-card:hover .check-path        { stroke: var(--brand-primary); }
+
+  @media (max-width: 767px) {
+    /* 1 column on mobile */
+    .grid.grid-cols-1.md\\:grid-cols-3 { grid-template-columns:1fr !important; }
+    /* Remove fixed height */
+    .service-card { height:auto !important; }
+  }
 </style>

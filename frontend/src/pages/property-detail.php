@@ -69,7 +69,7 @@ $_navPage   = 'properties.php';
 <main>
 
 <!-- ===== BREADCRUMB ===== -->
-<section style="position:relative; width:100%; min-height:110px; display:flex; align-items:center; overflow:hidden;">
+<section class="hero-bleed" style="position:relative; width:100%; min-height:110px; display:flex; align-items:center; overflow:hidden;">
   <img src="<?= htmlspecialchars($property['image']) ?>" alt=""
        style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
   <div style="position:absolute; inset:0; background:rgba(0,0,0,0.72);"></div>
@@ -85,12 +85,12 @@ $_navPage   = 'properties.php';
 </section>
 
 <!-- ===== MAIN DETAIL ===== -->
-<section class="w-full bg-white" style="padding:64px 0;">
-  <div class="max-w-screen-xl mx-auto px-8 md:px-16">
-    <div style="display:flex; gap:56px; align-items:flex-start;">
+<section class="w-full bg-white" style="padding:40px 0;">
+  <div class="max-w-screen-xl mx-auto px-6 md:px-16">
+    <div class="det-layout">
 
       <!-- LEFT: Gallery -->
-      <div style="flex:0 0 420px;">
+      <div class="det-gallery">
         <img id="mainImg" src="<?= htmlspecialchars($property['image']) ?>" alt="<?= htmlspecialchars($property['title']) ?>"
              style="width:100%; height:340px; object-fit:cover; display:block; margin-bottom:10px;">
         <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;">
@@ -108,9 +108,9 @@ $_navPage   = 'properties.php';
       </div>
 
       <!-- RIGHT: Details -->
-      <div style="flex:1; min-width:0;">
+      <div class="det-details">
 
-        <h1 style="font-family:'Abhaya Libre',serif; font-size:2.9rem; font-weight:800; color:#111111; margin:0 0 10px; line-height:1.2;">
+        <h1 class="det-title" style="font-family:'Abhaya Libre',serif; font-weight:800; color:#111111; margin:0 0 10px; line-height:1.2;">
           <?= htmlspecialchars($property['title']) ?>
         </h1>
 
@@ -141,7 +141,7 @@ $_navPage   = 'properties.php';
         </div>
 
         <!-- Stats -->
-        <div style="display:flex; border:1px solid #eeeeee; margin-bottom:22px;">
+        <div class="det-stats" style="border:1px solid #eeeeee; margin-bottom:22px;">
           <?php
           $stats = [
             ['icon'=>'<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12V7a1 1 0 011-1h16a1 1 0 011 1v5M3 12v5h18v-5M3 12h18M7 12V9h4v3" stroke="var(--brand-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>', 'value'=>$property['bedrooms'], 'label'=>'Bedrooms'],
@@ -171,7 +171,7 @@ $_navPage   = 'properties.php';
         <!-- Rooms Available -->
         <h3 style="font-family:'Abhaya Libre',serif; font-size:1.3rem; font-weight:800; color:#111111; margin:0 0 10px;">Rooms Also Available In</h3>
         <div style="border:1px solid #eeeeee; padding:14px 18px; margin-bottom:18px;">
-          <div style="display:flex; flex-wrap:wrap; gap:12px 24px;">
+          <div class="rooms-grid">
             <?php foreach ($rooms_available as $room): ?>
             <div style="display:flex; align-items:center; gap:6px;">
               <svg width="15" height="15" viewBox="0 0 20 20" fill="none" style="flex-shrink:0;">
@@ -224,7 +224,7 @@ $_navPage   = 'properties.php';
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
 
     <p style="font-family:'Abhaya Libre',serif; font-size:0.75rem; font-weight:700; color:var(--brand-primary); letter-spacing:0.12em; text-transform:uppercase; margin:0 0 6px;">FEATURED LISTING</p>
-    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:208px;">
+    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:32px;" class="sim-header">
       <h2 style="font-family:'Abhaya Libre',serif; font-size:2.9rem; font-weight:800; color:#111111; margin:0;">Similar Properties</h2>
       <a href="/src/pages/properties.php"
          style="background:var(--brand-primary); color:#ffffff; font-family:'Abhaya Libre',serif; font-weight:600; font-size:0.9rem; padding:10px 24px; text-decoration:none; border:1.5px solid var(--brand-primary);">
@@ -233,9 +233,9 @@ $_navPage   = 'properties.php';
     </div>
 
     <div class="sim-carousel-outer" style="overflow-x:clip; overflow-y:visible;">
-      <div class="sim-carousel" style="display:flex; gap:20px; height:362px; align-items:flex-start; transition:transform 0.5s ease;">
+      <div class="sim-carousel" style="display:flex; gap:20px; align-items:flex-start; transition:transform 0.5s ease;">
         <?php foreach ($similar as $sp): ?>
-        <div class="sim-card" style="flex:0 0 calc(25% - 15px); min-width:0; cursor:pointer;">
+        <div class="sim-card" style="cursor:pointer;">
           <img src="<?= htmlspecialchars($sp['image']) ?>" alt="<?= htmlspecialchars($sp['title']) ?>"
                style="width:100%; height:362px; object-fit:cover; display:block; flex-shrink:0;">
           <div class="sim-hover-panel" style="background:#ffffff; padding:16px 22px 28px;">
@@ -314,17 +314,28 @@ $_navPage   = 'properties.php';
   if (!carousel || !prevBtn || !nextBtn) return;
 
   var total   = <?= count($similar) ?>;
-  var pages   = Math.ceil(total / 4);
   var current = 0;
 
+  function getPerPage() {
+    return parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sim-per-page').trim()) || 1;
+  }
+  function getStep() {
+    var card = carousel.children[0];
+    return card ? card.offsetWidth + 20 : 0;
+  }
+  function getPages() { return Math.ceil(total / getPerPage()); }
+
   function update() {
-    carousel.style.transform = 'translateX(-' + (current * 100) + '%)';
+    var pages = getPages();
+    if (current >= pages) current = pages - 1;
+    carousel.style.transform = 'translateX(-' + (current * getPerPage() * getStep()) + 'px)';
     prevBtn.style.opacity = current === 0 ? '0.4' : '1';
-    nextBtn.style.opacity = current === pages - 1 ? '0.4' : '1';
+    nextBtn.style.opacity = current >= pages - 1 ? '0.4' : '1';
   }
 
   prevBtn.addEventListener('click', function(){ if (current > 0) { current--; update(); } });
-  nextBtn.addEventListener('click', function(){ if (current < pages - 1) { current++; update(); } });
+  nextBtn.addEventListener('click', function(){ if (current < getPages() - 1) { current++; update(); } });
+  window.addEventListener('resize', function(){ current = 0; update(); });
 
   update();
 })();
@@ -338,7 +349,7 @@ $_navPage   = 'properties.php';
   <div style="position:fixed; inset:0; background:rgba(0,0,0,0.55); backdrop-filter:blur(5px); -webkit-backdrop-filter:blur(5px); pointer-events:none;"></div>
 
   <!-- Modal card -->
-  <div style="position:relative; z-index:1; background:#ffffff; width:1076px; max-width:calc(100% - 0px); max-height:90vh; overflow-y:auto; padding:100px; display:flex; flex-direction:column; gap:82px; box-sizing:border-box; margin:auto;">
+  <div class="tenant-modal-card" style="position:relative; z-index:1; background:#ffffff; width:1076px; max-width:100%; max-height:90vh; overflow-y:auto; box-sizing:border-box; margin:auto;">
 
     <!-- Close -->
     <button onclick="document.getElementById('tenantModal').style.display='none';"
@@ -454,6 +465,63 @@ $_navPage   = 'properties.php';
   .det-btn-primary:hover { background:#ffffff !important; color:#000000 !important; }
   .det-btn-outline:hover  { background:var(--brand-primary) !important; color:#ffffff !important; border-color:var(--brand-primary) !important; }
   .sim-btn:hover          { background:#ffffff !important; color:#000000 !important; }
+
+  /* ── Main detail layout ── */
+  .det-layout  { display:flex; flex-direction:column; gap:32px; }
+  .det-gallery { width:100%; }
+  .det-details { width:100%; min-width:0; }
+  .det-title   { font-size:1.9rem; }
+  .det-stats   { display:grid; grid-template-columns:repeat(3,1fr); }
+  .det-stats > div { border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee; }
+  .det-stats > div:nth-child(3n) { border-right:none; }
+  .det-stats > div:nth-last-child(-n+3) { border-bottom:none; }
+
+  @media (min-width:768px) {
+    .det-layout  { flex-direction:row; align-items:flex-start; gap:56px; }
+    .det-gallery { flex:0 0 420px; }
+    .det-details { flex:1; }
+    .det-title   { font-size:2.9rem; }
+    .det-stats   { display:flex; }
+    .det-stats > div { border-right:1px solid #eeeeee; border-bottom:none; }
+    .det-stats > div:last-child { border-right:none; }
+  }
+
+  /* ── Similar properties ── */
+  :root { --sim-per-page: 1; }
+  @media (min-width:768px) { :root { --sim-per-page: 4; } }
+
+  /* Mobile: always fully expanded */
+  .sim-card {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #094F4F99;
+    overflow: visible;
+    height: auto;
+  }
+  .sim-card img { height:240px; width:100%; object-fit:cover; display:block; flex-shrink:0; }
+  .sim-hover-panel { flex-shrink:0; }
+
+  /* Desktop: collapsed with hover expand */
+  @media (min-width:768px) {
+    .sim-card {
+      flex: 0 0 calc(25% - 15px);
+      height: 362px;
+      overflow: hidden;
+      transition: height 0.35s ease, transform 0.35s ease;
+    }
+    .sim-card img { height:362px; transition:filter 0.25s ease; }
+    .sim-card:hover { height:542px; transform:translateY(-180px); }
+    .sim-card:hover img { filter:brightness(0.92); }
+    .sim-header { margin-bottom:208px !important; }
+  }
+  /* Modal responsive padding */
+  .tenant-modal-card { padding:32px 20px; display:flex; flex-direction:column; gap:32px; }
+  @media (min-width:768px) { .tenant-modal-card { padding:100px; gap:82px; } }
+
+  .rooms-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px 24px; }
+  @media (min-width:768px) { .rooms-grid { grid-template-columns:repeat(4,auto); justify-content:start; } }
+
   #tenantSubmitBtn:hover:not(:disabled) { background:#063a3a !important; }
   #tenantModal input::placeholder, #tenantModal textarea::placeholder { color:#aaa; }
   #tenantModal input[type="text"]:focus, #tenantModal input[type="email"]:focus,

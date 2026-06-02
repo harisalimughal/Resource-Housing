@@ -20,7 +20,7 @@
 <main>
 
 <!-- ===== HERO SECTION ===== -->
-<section style="position:relative; width:100%; min-height:580px; display:flex; align-items:center; overflow:hidden;">
+<section class="hero-bleed" style="position:relative; width:100%; min-height:580px; display:flex; align-items:center; overflow:hidden;">
 
   <!-- Background image -->
   <img src="/public/assets/images/uk-houses/uk-3.jpg" alt="HMO Property"
@@ -211,6 +211,24 @@ $suppFeatures = [
 
 <?php require __DIR__ . '/includes/becomeTenants.php'; ?>
 <?php require __DIR__ . '/includes/footer.php'; ?>
+
+<style>
+  @media (max-width: 767px) {
+    /* Shrink hero */
+    section[style*="min-height:580px"] { min-height:300px !important; }
+    h1[style*="font-size:4.2rem"] { font-size:2rem !important; }
+    /* Features: hide desktop grid, show as single column list */
+    div[style*="grid-template-columns:1fr 1px 1fr 1px 1fr"] { display:flex !important; flex-direction:column !important; }
+    div[style*="grid-column"][style*="grid-row:1"] { padding:16px 0 4px !important; }
+    div[style*="grid-column"][style*="grid-row:2"] { padding:0 0 20px !important; border-bottom:1px solid rgba(255,255,255,0.15); }
+    div[style*="background:#d0d8d8; margin:40px 0"] { display:none !important; }
+    div[style*="background:rgba(255,255,255,0.2); margin:20px 0"] { display:none !important; }
+    /* Shrink supported accommodation heading */
+    h2[style*="font-size:3.8rem"] { font-size:2rem !important; }
+    /* Remove nowrap on headings */
+    h3[style*="white-space:nowrap"] { white-space:normal !important; padding-left:0 !important; }
+  }
+</style>
 
 </body>
 </html>

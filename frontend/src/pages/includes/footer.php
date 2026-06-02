@@ -48,7 +48,6 @@
           <li><a href="/src/pages/index.php"   class="footer-link">Home</a></li>
           <li><a href="/src/pages/about.php"   class="footer-link">About Us</a></li>
           <li><a href="/src/pages/hmo.php"     class="footer-link">HMO Services</a></li>
-          <li><a href="/src/pages/tenants.php" class="footer-link">Tenants</a></li>
         </ul>
       </div>
 
@@ -59,7 +58,6 @@
           <li><a href="/src/pages/propert-managment.php"     class="footer-link">Services</a></li>
           <li><a href="/src/pages/propert-managment.php"     class="footer-link">Property Management</a></li>
           <li><a href="/src/pages/hmo.php"        class="footer-link">HMO (Supported Accommodation)</a></li>
-          <li><a href="/src/pages/tenants.php"    class="footer-link">Tenants</a></li>
         </ul>
       </div>
 

@@ -80,38 +80,30 @@ $aboutServices = [
   'Property Maintenance',
 ];
 ?>
-<section class="w-full py-12 bg-white">
-  <div class="max-w-screen-xl mx-auto px-8 md:px-16">
+<section class="w-full" style="position:relative; overflow:hidden; background:var(--brand-primary); padding:130px 0;">
+  <!-- Faint bg image -->
+  <img src="/public/assets/images/home-center2.jpg" alt="" aria-hidden="true"
+       style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.15; pointer-events:none;">
 
-    <!-- Teal inset container -->
-    <div style="position:relative; overflow:hidden; background:var(--brand-primary); padding:64px 64px 72px;">
+  <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1;">
 
-      <!-- Faint bg image -->
-      <img src="/public/assets/images/home-center2.jpg" alt="" aria-hidden="true"
-           style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.15; pointer-events:none;">
+    <p style="font-family:'Abhaya Libre',serif; font-size:2rem; font-weight:700; color:#ffffff; text-align:center; line-height:1.45; margin:0 auto 56px; max-width:640px;">
+      We provide HMO rooms to general public 18<br>and over with our compliances services
+    </p>
 
-      <div style="position:relative; z-index:1;">
-
-        <p style="font-family:'Abhaya Libre',serif; font-size:2rem; font-weight:700; color:#ffffff; text-align:center; line-height:1.45; margin:0 auto 52px; max-width:640px;">
-          We provide HMO rooms to general public 18<br>and over with our compliances services
-        </p>
-
-        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:14px;">
-          <?php foreach ($aboutServices as $svc): ?>
-          <div class="about-svc-card" style="background:#ffffff; padding:22px 20px; display:flex; align-items:center; gap:14px; transition:background 0.25s ease; cursor:pointer;">
-            <span style="flex-shrink:0; width:32px; height:32px; border-radius:50%; background:var(--brand-primary); display:flex; align-items:center; justify-content:center;">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <span style="font-family:'Abhaya Libre',serif; font-size:0.95rem; color:#111111; line-height:1.4;">
-              <?= htmlspecialchars($svc) ?>
-            </span>
-          </div>
-          <?php endforeach; ?>
-        </div>
-
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
+      <?php foreach ($aboutServices as $svc): ?>
+      <div class="about-svc-card" style="background:#ffffff; height:108px; padding:30px 25px; border:1px solid #E5E7EB; box-sizing:border-box; display:flex; align-items:center; gap:14px; transition:background 0.25s ease, border-color 0.25s ease; cursor:pointer;">
+        <span style="flex-shrink:0; width:32px; height:32px; border-radius:50%; background:var(--brand-primary); display:flex; align-items:center; justify-content:center;">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span style="font-family:'Abhaya Libre',serif; font-size:0.95rem; color:#111111; line-height:1.4;">
+          <?= htmlspecialchars($svc) ?>
+        </span>
       </div>
+      <?php endforeach; ?>
     </div>
 
   </div>
@@ -125,6 +117,21 @@ $aboutServices = [
 <style>
   .about-svc-card:hover { background: var(--brand-primary) !important; }
   .about-svc-card:hover span:last-child { color: #ffffff !important; }
+
+  @media (max-width: 767px) {
+    /* Section 1: stack columns, hide right image */
+    section.w-full.py-20.bg-white > div > div[style*="display:flex; align-items:flex-start; gap:60px"] { flex-direction:column !important; gap:24px !important; }
+    div[style*="flex:0 0 380px"] { display:none !important; }
+    /* Shrink h1 */
+    h1[style*="font-size:5rem"] { font-size:2.2rem !important; }
+    /* Section 2 */
+    h2[style*="font-size:3.2rem"] { font-size:1.8rem !important; }
+    img[style*="height:380px"] { height:220px !important; }
+    /* Section 3: 2 col grid */
+    div[style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns:1fr 1fr !important; }
+    section[style*="padding:130px 0"] { padding:48px 0 56px !important; }
+    p[style*="font-size:2rem"] { font-size:1.3rem !important; }
+  }
 </style>
 
 </body>

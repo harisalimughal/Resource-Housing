@@ -16,7 +16,11 @@
           Take the next step toward independent living with safe, supportive housing designed to help you build
           confidence, stability, and long-term tenancy skills.
         </p>
-        <a href="/src/pages/tenants.php"
+        <?php
+        $onPmPage = isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) === 'propert-managment.php';
+        $enquiryHref = $onPmPage ? '#tenants-enquiry' : '/src/pages/propert-managment.php#tenants-enquiry';
+        ?>
+        <a href="<?= $enquiryHref ?>"
            class="become-tenant-btn inline-block bg-white text-black text-sm font-semibold px-8 py-2.5 transition-all duration-200"
            style="font-family:'Abhaya Libre',serif; border: 1.5px solid white;">
           Tenants Enquiry

@@ -476,6 +476,28 @@
   .design-btn-primary:hover { background:#ffffff !important; color:#000000 !important; }
   .design-btn-outline:hover  { background:#ffffff !important; color:#000000 !important; }
   #enquirySubmitBtn:hover:not(:disabled) { background:#ffffff !important; color:#000000 !important; border-color:var(--brand-primary) !important; }
+
+  @media (max-width: 767px) {
+    /* All flex rows: stack */
+    div[style*="display:flex; align-items:center; gap:60px"] { flex-direction:column !important; gap:24px !important; }
+    /* Fixed image widths: full width */
+    div[style*="flex:0 0 480px"],
+    div[style*="flex:0 0 460px"] { flex:unset !important; width:100% !important; }
+    /* Shrink headings */
+    h1[style*="font-size:4.2rem"] { font-size:2rem !important; }
+    h2[style*="font-size:3.5rem"] { font-size:1.8rem !important; }
+    h2[style*="font-size:3.2rem"] { font-size:1.8rem !important; }
+    /* Shrink images */
+    img[style*="height:380px"] { height:220px !important; }
+    img[style*="height:400px"] { height:220px !important; }
+    img[style*="height:420px"] { height:220px !important; }
+    /* Shrink section padding */
+    section.w-full.py-20 { padding-top:2.5rem !important; padding-bottom:2.5rem !important; }
+    /* Form grid */
+    div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
+    /* Enquiry form heading */
+    h2[style*="font-size:3.5rem"][style*="color:var(--brand-primary)"] { font-size:2rem !important; }
+  }
 </style>
 
 </body>

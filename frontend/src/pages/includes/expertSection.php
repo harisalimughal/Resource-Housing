@@ -113,4 +113,20 @@
     font-size: 0.9rem;
     color: rgba(255,255,255,0.7);
   }
+
+  @media (max-width: 767px) {
+    /* Stack columns */
+    section[style*="background:#0d3535"] > div[style*="display:flex"] { flex-direction:column !important; gap:36px !important; }
+    /* Shrink heading */
+    section[style*="background:#0d3535"] h2 { font-size:2rem !important; }
+    /* Shrink images */
+    section[style*="background:#0d3535"] img[style*="height:270px"] { height:200px !important; }
+    section[style*="background:#0d3535"] img[style*="height:220px"] { height:160px !important; }
+    /* Stack stats */
+    section[style*="background:#0d3535"] div[style*="display:flex; gap:12px"] { flex-wrap:wrap; }
+    .expert-stat { min-width:calc(50% - 6px); }
+    .expert-stat-num { font-size:2rem !important; }
+    /* Hide badge on mobile */
+    section[style*="background:#0d3535"] .discover-badge { display:none !important; }
+  }
 </style>

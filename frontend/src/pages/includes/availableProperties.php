@@ -128,6 +128,20 @@
     font-size: 0.9rem;
     color: #333333;
   }
+
+  @media (max-width: 767px) {
+    /* 1 card per page on mobile */
+    .prop-card { flex: 0 0 100% !important; }
+    /* Heading gap: remove the huge mb-52 */
+    .flex.items-end.justify-between.mb-52 { margin-bottom:1.5rem !important; }
+    /* Always show card panel on mobile */
+    .prop-card { height:auto !important; overflow:visible !important; transform:none !important; }
+    .prop-card img { height:220px !important; }
+    /* Let carousel expand to fit the cards */
+    .prop-carousel { height:auto !important; }
+    /* Move arrows down a bit */
+    .flex.items-center.justify-center.gap-3.mt-6 { margin-top: 2.5rem !important; }
+  }
 </style>
 
 <script>

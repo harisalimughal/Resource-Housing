@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $_navPage    = basename($_SERVER["PHP_SELF"] ?? "");
 $_isHome     = in_array($_navPage, ["index.php", "home.php"]);
 $_isServices = in_array($_navPage, ["propert-managment.php", "hmo.php", "compliance.php"]);
@@ -7,7 +7,7 @@ $_isAbout    = ($_navPage === "about.php");
 $_isContact  = ($_navPage === "contact.php");
 ?>
 <!-- ===== HEADER ===== -->
-<header style="background-color: var(--brand-primary);" class="w-full">
+<header id="mainHeader" style="background-color: var(--brand-primary); position:sticky; top:0; z-index:100;" class="w-full">
   <div class="max-w-screen-xl mx-auto px-8 md:px-12 py-4 flex items-center justify-between">
 
     <!-- Logo -->

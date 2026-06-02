@@ -20,16 +20,16 @@
 <main>
 
 <!-- ===== HERO ===== -->
-<section style="position:relative; width:100%; min-height:340px; display:flex; align-items:center; overflow:hidden;">
+<section class="hero-bleed" style="position:relative; width:100%; min-height:580px; display:flex; align-items:center; overflow:hidden;">
   <img src="/public/assets/images/uk-houses/uk-10.jpg" alt="Contact Resource Housing"
        style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
-  <div style="position:absolute; inset:0; background:rgba(0,0,0,0.68);"></div>
+  <div style="position:absolute; inset:0; background:rgba(0,0,0,0.70);"></div>
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1; width:100%;">
-    <div style="max-width:600px;">
-      <h1 style="font-family:'Abhaya Libre',serif; font-size:3.8rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 20px;">
+    <div style="max-width:680px;">
+      <h1 style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
         Resource Housing Ltd.
       </h1>
-      <p style="font-family:'Abhaya Libre',serif; font-size:1.05rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:460px;">
+      <p style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:560px;">
         We are here to help you find what sits right for you. With properties and internationally, we are here to accommodate for your needs.
       </p>
     </div>
@@ -152,6 +152,11 @@
 <?php require __DIR__ . '/includes/footer.php'; ?>
 
 <style>
+  @media (max-width: 767px) {
+    /* Shrink hero */
+    section[style*="min-height:580px"] { min-height:300px !important; }
+    h1[style*="font-size:4.2rem"] { font-size:2rem !important; }
+  }
   #contactSubmitBtn:hover:not(:disabled) { background:#ffffff !important; color:#000000 !important; border-color:var(--brand-primary) !important; }
   input::placeholder, textarea::placeholder { color:#aaa; }
   input:focus, textarea:focus { border-color:var(--brand-primary); }

@@ -1,4 +1,4 @@
-﻿<!-- ===== HERO SECTION ===== -->
+<!-- ===== HERO SECTION ===== -->
 <section class="w-full pt-10 pb-24 overflow-x-hidden">
 
   <!-- Text row -->
@@ -104,6 +104,24 @@
   @keyframes discover-text-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   .discover-text-spin { animation: discover-text-rotate 10s linear infinite; transform-origin: center; }
   @media (prefers-reduced-motion: reduce) { .discover-text-spin { animation: none !important; } }
+
+  @media (max-width: 767px) {
+    /* Remove fixed height so headings don't get cut off */
+    .flex.flex-col.md\\:flex-row { height:auto !important; padding-top:24px; padding-bottom:16px; }
+    /* Shrink hero headings */
+    .text-5xl { font-size:1.9rem !important; }
+    /* Adjust discovery badge on mobile */
+    .discover-badge { 
+      display:block !important; 
+      transform:scale(0.6);
+      transform-origin: top right;
+      top: -30px !important;
+      right: 20px !important;
+    }
+    /* Shrink carousel height */
+    .hero-slide img { height:240px !important; }
+    div[style*="width:1170px"] { height:240px !important; }
+  }
 </style>
 
 <script>
