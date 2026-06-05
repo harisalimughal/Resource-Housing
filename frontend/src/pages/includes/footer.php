@@ -47,7 +47,7 @@
         <ul class="space-y-3">
           <li><a href="/src/pages/index.php"   class="footer-link">Home</a></li>
           <li><a href="/src/pages/about.php"   class="footer-link">About Us</a></li>
-          <li><a href="/src/pages/hmo.php"     class="footer-link">HMO Services</a></li>
+          <li><a href="/src/pages/hmo.php"     class="footer-link">Co-living Services</a></li>
           <li><a href="/src/pages/blogs.php"   class="footer-link">Blogs</a></li>
         </ul>
       </div>
@@ -58,7 +58,7 @@
         <ul class="space-y-3">
           <li><a href="/src/pages/propert-managment.php"     class="footer-link">Services</a></li>
           <li><a href="/src/pages/propert-managment.php"     class="footer-link">Property Management</a></li>
-          <li><a href="/src/pages/hmo.php"        class="footer-link">HMO (Supported Accommodation)</a></li>
+          <li><a href="/src/pages/hmo.php"        class="footer-link">Co-living (House In Multiple Occupation)</a></li>
         </ul>
       </div>
 
@@ -71,14 +71,14 @@
             <svg class="w-5 h-5 text-white mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
             </svg>
-            <span class="text-white/80 text-sm leading-snug" style="font-family:'Abhaya Libre',serif;">1250 Coventry Road Birmingham, B25 8BJ</span>
+            <span class="text-white/80 text-sm leading-snug" style="font-family:'Abhaya Libre',serif;">74 Dudley Road Edgbaston B18 7Qs</span>
           </li>
           <!-- Phone -->
           <li class="flex items-center gap-3">
             <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.06 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.13 1.02.37 2.02.72 2.98a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.1-1.1a2 2 0 012.11-.45c.96.35 1.96.59 2.98.72A2 2 0 0122 16.92z"/>
             </svg>
-            <span class="text-white/80 text-sm" style="font-family:'Abhaya Libre',serif;">07557538026</span>
+            <span class="text-white/80 text-sm" style="font-family:'Abhaya Libre',serif;">+44 7867 650913</span>
           </li>
           <!-- Email -->
           <li class="flex items-center gap-3">

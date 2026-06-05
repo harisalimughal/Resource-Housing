@@ -1,4 +1,4 @@
-<h2>What Is a Guaranteed Rent Scheme?</h2>
+﻿<h2>What Is a Guaranteed Rent Scheme?</h2>
 <p>A guaranteed rent scheme — sometimes called a rent-to-rent or lease guarantee arrangement — is an agreement where a property management company leases your property and pays you a fixed monthly rent, regardless of whether the property is occupied or whether tenants pay on time. The management company then sub-lets the property and takes responsibility for all day-to-day management.</p>
 
 <h2>How Does It Work in Practice?</h2>
@@ -12,7 +12,7 @@
 <p><strong>Fully managed.</strong> With a reputable partner like Resource Housing, your property is maintained to a high standard, compliance is kept up to date, and any maintenance issues are handled promptly — protecting the long-term value of your investment.</p>
 
 <h2>What to Look for in a Scheme Provider</h2>
-<p>Not all guaranteed rent providers operate to the same standard. When evaluating a provider, look for transparent lease agreements with no hidden exit clauses, a proven track record of on-time payments, evidence of proper HMO licensing and compliance management, and a clear process for property maintenance and tenant management. Resource Housing has been delivering guaranteed rent solutions to Birmingham landlords since 2020, with a consistent record of on-time payments and fully compliant properties.</p>
+<p>Not all guaranteed rent providers operate to the same standard. When evaluating a provider, look for transparent lease agreements with no hidden exit clauses, a proven track record of on-time payments, evidence of proper House In Multiple Occupation licensing and compliance management, and a clear process for property maintenance and tenant management. Resource Housing has been delivering guaranteed rent solutions to Birmingham landlords since 2020, with a consistent record of on-time payments and fully compliant properties.</p>
 
 <h2>Is It Right for You?</h2>
-<p>Guaranteed rent is an excellent solution for landlords who value income certainty over maximising yield, those who want a genuinely hands-off investment, and owners of HMO properties who want compliance and management handled by experts. If you're considering a guaranteed rent arrangement, get in touch with Resource Housing to discuss how we can tailor a solution to your property and your goals.</p>
+<p>Guaranteed rent is an excellent solution for landlords who value income certainty over maximising yield, those who want a genuinely hands-off investment, and owners of House In Multiple Occupation properties who want compliance and management handled by experts. If you're considering a guaranteed rent arrangement, get in touch with Resource Housing to discuss how we can tailor a solution to your property and your goals.</p>

@@ -1,4 +1,4 @@
-﻿<?php $pageTitle = 'HMO – Resource Housing'; ?>
+﻿<?php $pageTitle = 'Co-living – Resource Housing'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,10 +33,10 @@
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1; width:100%;">
     <div style="max-width:680px;">
       <h1 class="hero-anim-left hero-d1" style="font-family:'Abhaya Libre',serif; font-size:4.2rem; font-weight:700; color:#ffffff; line-height:1.15; margin:0 0 24px;">
-        HMO (House In<br>Multiple Occupation)
+        House In Multiple<br>Occupation (Co-living)
       </h1>
       <p class="hero-anim-left hero-d2" style="font-family:'Abhaya Libre',serif; font-size:1.15rem; color:rgba(255,255,255,0.82); line-height:1.75; margin:0; max-width:560px;">
-        At Resource Housing, we specialise in providing high-quality HMO (House In Multiple Occupation) properties. Here's what you need to know about our HMO services.
+        At Resource Housing, we specialise in providing high-quality House In Multiple Occupation (Co-living) properties. Here's what you need to know about our Co-living services.
       </p>
     </div>
   </div>
@@ -47,24 +47,24 @@
 <?php
 $hmoFeatures = [
   [
-    'title' => 'Diverse HMO Properties',
-    'body'  => 'Our portfolio includes a wide range of HMO properties, from spacious houses to comfortable shared flats. We understand the unique needs of our tenants and offer suitable accommodation options.',
+    'title' => 'Diverse Co-living Properties',
+    'body'  => 'Our portfolio includes a wide range of House In Multiple Occupation properties, from spacious houses to comfortable shared flats. We understand the unique needs of our tenants and offer suitable accommodation options.',
   ],
   [
     'title' => 'Compliance & Safety',
-    'body'  => 'Your safety is our top priority. All our HMO properties meet or exceed local regulations and licensing requirements. We invest in fire safety measures, annual gas safety checks, and electrical safety certifications to ensure your peace of mind.',
+    'body'  => 'Your safety is our top priority. All our House In Multiple Occupation properties meet or exceed local regulations and licensing requirements. We invest in fire safety measures, annual gas safety checks, and electrical safety certifications to ensure your peace of mind.',
   ],
   [
     'title' => 'Professional Management',
-    'body'  => 'Managing an HMO property can be complex, but we\'ve got it covered. Our dedicated property management team handles all aspects, from maintenance of common areas to resolving tenant concerns. We make your HMO experience hassle-free.',
+    'body'  => 'Managing a House In Multiple Occupation property can be complex, but we\'ve got it covered. Our dedicated property management team handles all aspects, from maintenance of common areas to resolving tenant concerns. We make your Co-living experience hassle-free.',
   ],
   [
     'title' => 'Supportive Environment',
-    'body'  => 'We believe in fostering a supportive and inclusive environment in our HMO properties. We encourage positive tenant interactions and provide a comfortable living space for all residents.',
+    'body'  => 'We believe in fostering a supportive and inclusive environment in our House In Multiple Occupation properties. We encourage positive tenant interactions and provide a comfortable living space for all residents.',
   ],
   [
     'title' => 'Convenient Locations',
-    'body'  => 'Our HMO properties are strategically located near essential amenities, transportation links, and educational institutions, making your daily life more convenient.',
+    'body'  => 'Our House In Multiple Occupation properties are strategically located near essential amenities, transportation links, and educational institutions, making your daily life more convenient.',
   ],
 ];
 ?>
@@ -201,7 +201,7 @@ $suppFeatures = [
 
     <!-- Bottom closing text -->
     <p data-animate="fade-up" style="font-family:'Abhaya Libre',serif; font-size:1rem; color:rgba(255,255,255,0.75); text-align:center; line-height:1.8; margin:64px auto 0; max-width:820px;">
-      At Resource Housing, We Are Dedicated To Providing Safe, Comfortable, And Supportive Living Environments For All Our Tenants. Whether They Are Seeking An HMO Property Or Supported Accommodation. Your Well-Being And Satisfaction Are Our Top Priorities.
+      At Resource Housing, We Are Dedicated To Providing Safe, Comfortable, And Supportive Living Environments For All Our Tenants. Whether They Are Seeking A House In Multiple Occupation Property Or Supported Accommodation. Your Well-Being And Satisfaction Are Our Top Priorities.
     </p>
 
   </div>

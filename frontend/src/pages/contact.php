@@ -56,7 +56,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0; margin-top:3px;">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="var(--brand-primary)"/>
           </svg>
-          <span style="font-family:'Abhaya Libre',serif; font-size:0.95rem; color:#444444; line-height:1.6;">1250 Coventry Road Birmingham, B25 8BJ</span>
+          <span style="font-family:'Abhaya Libre',serif; font-size:0.95rem; color:#444444; line-height:1.6;">174 Dudley Road Edgbaston B18 7Qs</span>
         </div>
 
         <!-- Phone -->
@@ -64,7 +64,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
             <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="var(--brand-primary)"/>
           </svg>
-          <span style="font-family:'Abhaya Libre',serif; font-size:0.95rem; color:#444444;">07557538026</span>
+          <span style="font-family:'Abhaya Libre',serif; font-size:0.95rem; color:#444444;">+44 7867 650913</span>
         </div>
 
         <!-- Email -->
@@ -139,7 +139,7 @@
 <section class="w-full" style="padding:0 0 80px; height:560px;">
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" data-animate="fade-up" style="height:100%;">
     <iframe
-      src="https://maps.google.com/maps?q=1250+Coventry+Road+Birmingham+B25+8BJ+UK&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      src="https://maps.google.com/maps?q=74+Dudley+Road+Edgbaston+Birmingham+B18+7QS+UK&t=&z=15&ie=UTF8&iwloc=&output=embed"
       width="100%" height="100%" style="border:0; display:block; min-height:480px;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>

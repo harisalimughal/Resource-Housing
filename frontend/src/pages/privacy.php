@@ -39,7 +39,7 @@
 
       <div data-animate="fade-up" data-animate-delay="80">
         <h2>1. Who We Are</h2>
-        <p>Resource Housing Ltd is the data controller for personal information collected through this website and our services. Our registered address is 1250 Coventry Road, Birmingham, B25 8BJ. If you have any questions about how we handle your data, you can contact us at <a href="mailto:resourcehousingwm@gmail.com">resourcehousingwm@gmail.com</a> or call 07557538026.</p>
+        <p>Resource Housing Ltd is the data controller for personal information collected through this website and our services. Our registered address is 1250 Coventry Road, Birmingham, B25 8BJ. If you have any questions about how we handle your data, you can contact us at <a href="mailto:resourcehousingwm@gmail.com">resourcehousingwm@gmail.com</a> or call +44 7867 650913.</p>
       </div>
 
       <div data-animate="fade-up" data-animate-delay="100">
@@ -135,7 +135,7 @@
       <div data-animate="fade-up" data-animate-delay="300" style="margin-top:40px; padding:28px 32px; background:#F8FAFC; border-left:4px solid var(--brand-primary);">
         <p style="margin:0; font-weight:700; color:#111111;">Contact Us About Your Privacy</p>
         <p style="margin:8px 0 0;">Resource Housing Ltd, 1250 Coventry Road, Birmingham, B25 8BJ<br>
-        Email: <a href="mailto:resourcehousingwm@gmail.com">resourcehousingwm@gmail.com</a> &nbsp;|&nbsp; Phone: 07557538026</p>
+        Email: <a href="mailto:resourcehousingwm@gmail.com">resourcehousingwm@gmail.com</a> &nbsp;|&nbsp; Phone: +44 7867 650913</p>
       </div>
 
     </div>

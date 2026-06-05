@@ -2,7 +2,7 @@
 <?php
 $testimonials = [
     [
-        'quote'  => 'Resource Housing made the entire process of finding an HMO seamless and stress-free. The team was professional, responsive, and genuinely cared about finding us the right fit for our lifestyle and budget.',
+        'quote'  => 'Resource Housing made the entire process of finding a House In Multiple Occupation seamless and stress-free. The team was professional, responsive, and genuinely cared about finding us the right fit for our lifestyle and budget.',
         'name'   => 'JAMES WHITFIELD',
         'location' => '-Birmingham, UK',
         'avatar' => 'https://i.pravatar.cc/100?img=33',

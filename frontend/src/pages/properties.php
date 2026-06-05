@@ -59,7 +59,7 @@ $types = array_unique(array_column($all, 'type'));
 </section>
 
 <!-- ===== FILTER BAR ===== -->
-<section class="w-full bg-white py-10">
+<section class="w-full bg-white py-10" style="position:relative; z-index:50;">
   <div class="max-w-screen-xl mx-auto px-8 md:px-16">
     <form id="filterForm" data-animate="fade-up" method="GET" action="" style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
 
@@ -75,7 +75,7 @@ $types = array_unique(array_column($all, 'type'));
           echo '  <button type="button" class="cdd-trigger" style="width:100%;border:1px solid #dddddd;padding:12px 14px;font-family:\'Abhaya Libre\',serif;font-size:0.95rem;color:#555;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px;white-space:nowrap;">';
           echo '    <span class="cdd-label">' . htmlspecialchars($displayLabel) . '</span>' . $chevron;
           echo '  </button>';
-          echo '  <div class="cdd-panel" style="display:none;position:absolute;top:calc(100% + 4px);left:0;min-width:100%;background:#fff;border:1px solid #dddddd;z-index:999;box-shadow:0 4px 16px rgba(0,0,0,0.08);">';
+          echo '  <div class="cdd-panel" style="display:none;position:absolute;top:calc(100% + 4px);left:0;min-width:100%;background:#fff;border:1px solid #dddddd;z-index:9999;box-shadow:0 4px 16px rgba(0,0,0,0.08);">';
           foreach ($options as $val => $text) {
               $active = ($selected === (string)$val) ? 'background:#cddcdb;' : '';
               echo '    <div class="cdd-option" data-val="' . htmlspecialchars((string)$val) . '" data-label="' . htmlspecialchars($label) . '" data-text="' . htmlspecialchars($text) . '" style="padding:11px 16px;font-family:\'Abhaya Libre\',serif;font-size:0.95rem;color:#333;cursor:pointer;' . $active . '">' . htmlspecialchars($text) . '</div>';

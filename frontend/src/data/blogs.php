@@ -3,14 +3,14 @@
 $blogs = [
   [
     'id'         => 1,
-    'title'      => 'Understanding HMO Licensing in the UK: A Landlord\'s Complete Guide',
-    'excerpt'    => 'HMO licensing is a legal requirement for most multi-occupancy properties. Learn what mandatory licensing means, who needs it, and how to stay fully compliant.',
+    'title'      => 'Understanding Co-living Licensing in the UK: A Landlord\'s Complete Guide',
+    'excerpt'    => 'House In Multiple Occupation licensing is a legal requirement for most multi-occupancy properties. Learn what mandatory licensing means, who needs it, and how to stay fully compliant.',
     'image'      => '/public/assets/images/uk-houses/uk-3.jpg',
     'hero_image' => '/public/assets/images/uk-houses/uk-3.jpg',
     'day'        => '10',
     'day_name'   => 'Feb',
     'date'       => 'February 10, 2026',
-    'category'   => 'HMO',
+    'category'   => 'Co-living',
     'author'     => 'Resource Housing',
     'read_time'  => '5 min read',
     'link'       => '/src/pages/blog-detail.php?id=1',
@@ -31,8 +31,8 @@ $blogs = [
   ],
   [
     'id'         => 3,
-    'title'      => 'Fire Safety in HMO Properties: A Complete Compliance Checklist',
-    'excerpt'    => 'Fire safety is the most critical compliance requirement for any HMO landlord. This checklist covers everything from risk assessments to detector certifications.',
+    'title'      => 'Fire Safety in Co-living Properties: A Complete Compliance Checklist',
+    'excerpt'    => 'Fire safety is the most critical compliance requirement for any House In Multiple Occupation landlord. This checklist covers everything from risk assessments to detector certifications.',
     'image'      => '/public/assets/images/uk-houses/uk-4.jpg',
     'hero_image' => '/public/assets/images/uk-houses/uk-4.jpg',
     'day'        => '05',
@@ -59,8 +59,8 @@ $blogs = [
   ],
   [
     'id'         => 5,
-    'title'      => 'How to Find Quality HMO Accommodation in Birmingham',
-    'excerpt'    => 'Looking for affordable, well-managed shared housing in Birmingham? Here\'s what to look for, what questions to ask, and how to spot a quality HMO property.',
+    'title'      => 'How to Find Quality Co-living Accommodation in Birmingham',
+    'excerpt'    => 'Looking for affordable, well-managed shared housing in Birmingham? Here\'s what to look for, what questions to ask, and how to spot a quality House In Multiple Occupation property.',
     'image'      => '/public/assets/images/uk-houses/uk-7.jpg',
     'hero_image' => '/public/assets/images/uk-houses/uk-7.jpg',
     'day'        => '01',
@@ -73,7 +73,7 @@ $blogs = [
   ],
   [
     'id'         => 6,
-    'title'      => 'Property Compliance Explained: What Every HMO Landlord Must Have',
+    'title'      => 'Property Compliance Explained: What Every Co-living Landlord Must Have',
     'excerpt'    => 'From PAT testing to Legionella assessments, complying with property regulations is non-negotiable. A practical guide to all the certificates and surveys you need.',
     'image'      => '/public/assets/images/uk-houses/uk-8.jpg',
     'hero_image' => '/public/assets/images/uk-houses/uk-8.jpg',

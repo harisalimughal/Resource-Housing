@@ -7,7 +7,7 @@
       <div>
         <p class="text-xs font-semibold tracking-[0.2em] uppercase mb-3" data-animate="fade-up" style="color:#aaa; font-family:'Abhaya Libre',serif;">Featured Listing</p>
         <h2 class="text-5xl md:text-6xl font-bold leading-tight" data-animate="fade-up" data-animate-delay="100" style="font-family:'Abhaya Libre',serif;">
-          <span style="color:#111111;">Available </span><span style="color:var(--brand-primary);">HMO Properties</span>
+          <span style="color:#111111;">Available </span><span style="color:var(--brand-primary);">Co-living Properties</span>
         </h2>
       </div>
       <a href="/src/pages/properties.php"

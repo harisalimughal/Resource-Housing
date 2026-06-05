@@ -20,8 +20,8 @@
           'items' => ['Fire risk assessments','Asbestos management survey reports','Damp survey','Legionella','Pat testing','Fire detection certificate','Emergency lighting certificate','Property Maintenance'],
         ],
         [
-          'title' => 'HMO',
-          'items' => ['Diverse HMO Properties','Compliance & Safety','Professional Management','Supportive Environment','Convenient Locations'],
+          'title' => 'Co-living',
+          'items' => ['Diverse Co-living Properties','Compliance & Safety','Professional Management','Supportive Environment','Convenient Locations'],
         ],
       ];
       foreach ($cards as $i => $card):

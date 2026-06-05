@@ -1,11 +1,12 @@
 <?php
 $_navPage    = basename($_SERVER["PHP_SELF"] ?? "");
 $_isHome     = in_array($_navPage, ["index.php", "home.php"]);
-$_isServices = in_array($_navPage, ["propert-managment.php", "hmo.php", "compliance.php"]);
-$_isProps    = ($_navPage === "properties.php");
-$_isAbout    = ($_navPage === "about.php");
-$_isContact  = ($_navPage === "contact.php");
-$_isBlogs    = ($_navPage === "blogs.php");
+$_isHmo        = ($_navPage === "hmo.php");
+$_isPM         = ($_navPage === "propert-managment.php");
+$_isCompliance = ($_navPage === "compliance.php");
+$_isProps      = ($_navPage === "properties.php");
+$_isAbout      = ($_navPage === "about.php");
+$_isContact    = ($_navPage === "contact.php");
 ?>
 <!-- ===== HEADER ===== -->
 <header id="mainHeader" style="background-color: var(--brand-primary); position:sticky; top:0; z-index:100;" class="w-full">
@@ -17,29 +18,14 @@ $_isBlogs    = ($_navPage === "blogs.php");
     </a>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden md:flex items-center gap-8">
-      <a href="/src/pages/index.php" class="header-nav-link <?= $_isHome ? 'font-bold' : '' ?>">Home</a>
-
-      <!-- Services dropdown -->
-      <div class="relative group">
-        <button class="header-nav-link flex items-center gap-1 focus:outline-none <?= $_isServices ? 'font-bold' : '' ?>" aria-haspopup="true" aria-expanded="false" id="servicesBtn">
-          Services
-          <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
-          </svg>
-        </button>
-        <div class="absolute left-0 mt-2 w-64 rounded-md shadow-lg py-1 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0 bg-white"
-             style="border: 1px solid rgba(0,0,0,0.08);">
-          <a href="/src/pages/propert-managment.php"     class="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-50 transition-colors">Property Management</a>
-          <a href="/src/pages/hmo.php"        class="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-50 transition-colors">HMO</a>
-          <a href="/src/pages/compliance.php" class="block px-4 py-2.5 text-sm text-gray-800 hover:bg-gray-50 transition-colors">Property Compliance</a>
-        </div>
-      </div>
-
-      <a href="/src/pages/properties.php" class="header-nav-link <?= $_isProps   ? 'font-bold' : '' ?>">Properties</a>
-      <a href="/src/pages/about.php"      class="header-nav-link <?= $_isAbout   ? 'font-bold' : '' ?>">About Us</a>
-      <a href="/src/pages/blogs.php"      class="header-nav-link <?= $_isBlogs   ? 'font-bold' : '' ?>">Blogs</a>
-      <a href="/src/pages/contact.php"    class="header-nav-link <?= $_isContact ? 'font-bold' : '' ?>">Contact Us</a>
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="/src/pages/index.php"           class="header-nav-link <?= $_isHome       ? 'font-bold' : '' ?>">Home</a>
+      <a href="/src/pages/hmo.php"             class="header-nav-link <?= $_isHmo        ? 'font-bold' : '' ?>">Co-living</a>
+      <a href="/src/pages/propert-managment.php" class="header-nav-link <?= $_isPM       ? 'font-bold' : '' ?>">Property Management</a>
+      <a href="/src/pages/compliance.php"      class="header-nav-link <?= $_isCompliance ? 'font-bold' : '' ?>">Property Compliance</a>
+      <a href="/src/pages/properties.php"      class="header-nav-link <?= $_isProps      ? 'font-bold' : '' ?>">Properties</a>
+      <a href="/src/pages/about.php"           class="header-nav-link <?= $_isAbout      ? 'font-bold' : '' ?>">About Us</a>
+      <a href="/src/pages/contact.php"         class="header-nav-link <?= $_isContact    ? 'font-bold' : '' ?>">Contact Us</a>
     </nav>
 
     <!-- CTA -->
@@ -83,25 +69,13 @@ $_isBlogs    = ($_navPage === "blogs.php");
 
         <!-- Nav links -->
         <div class="px-6 py-4 space-y-1">
-          <a href="/src/pages/index.php" class="block py-2 text-white hover:text-white/70 transition-colors <?= $_isHome ? 'font-bold' : '' ?>">Home</a>
-
-          <!-- Mobile services toggle -->
-          <button id="mobileServicesBtn" aria-expanded="false"
-                  class="w-full text-left py-2 text-white/90 flex items-center justify-between hover:text-white transition-colors <?= $_isServices ? 'font-bold' : 'font-medium' ?>">
-            <span>Services</span>
-            <svg class="w-4 h-4 text-white/70 transform transition-transform mobile-services-caret" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/>
-            </svg>
-          </button>
-          <div id="mobileServicesMenu" class="pl-4 hidden">
-            <a href="/src/pages/propert-managment.php"     class="block py-1.5 text-white/70 hover:text-white transition-colors text-sm">Property Management</a>
-            <a href="/src/pages/hmo.php"        class="block py-1.5 text-white/70 hover:text-white transition-colors text-sm">HMO</a>
-            <a href="/src/pages/compliance.php" class="block py-1.5 text-white/70 hover:text-white transition-colors text-sm">Property Compliance</a>
-          </div>
-
-          <a href="/src/pages/properties.php" class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isProps   ? 'font-bold' : '' ?>">Properties</a>
-          <a href="/src/pages/about.php"      class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isAbout   ? 'font-bold' : '' ?>">About Us</a>
-          <a href="/src/pages/contact.php"    class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isContact ? 'font-bold' : '' ?>">Contact Us</a>
+          <a href="/src/pages/index.php"             class="block py-2 text-white hover:text-white/70 transition-colors <?= $_isHome       ? 'font-bold' : '' ?>">Home</a>
+          <a href="/src/pages/hmo.php"               class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isHmo        ? 'font-bold' : '' ?>">Co-living</a>
+          <a href="/src/pages/propert-managment.php" class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isPM         ? 'font-bold' : '' ?>">Property Management</a>
+          <a href="/src/pages/compliance.php"        class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isCompliance ? 'font-bold' : '' ?>">Property Compliance</a>
+          <a href="/src/pages/properties.php"        class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isProps      ? 'font-bold' : '' ?>">Properties</a>
+          <a href="/src/pages/about.php"             class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isAbout      ? 'font-bold' : '' ?>">About Us</a>
+          <a href="/src/pages/contact.php"           class="block py-2 text-white/90 hover:text-white transition-colors <?= $_isContact    ? 'font-bold' : '' ?>">Contact Us</a>
 
           <div class="pt-4 flex justify-center">
             <a href="/src/pages/contact.php"
@@ -236,16 +210,5 @@ $_isBlogs    = ($_navPage === "blogs.php");
   if (closeBtn) closeBtn.addEventListener('click', closeMenu);
   if (backdrop) backdrop.addEventListener('click', closeMenu);
 
-  // Mobile services accordion
-  var svcBtn  = document.getElementById('mobileServicesBtn');
-  var svcMenu = document.getElementById('mobileServicesMenu');
-  if (svcBtn && svcMenu) {
-    svcBtn.addEventListener('click', function(){
-      var open = svcMenu.classList.toggle('hidden');
-      var caret = svcBtn.querySelector('.mobile-services-caret');
-      if (caret) caret.style.transform = open ? '' : 'rotate(180deg)';
-      svcBtn.setAttribute('aria-expanded', String(!open));
-    });
-  }
 })();
 </script>

@@ -16,7 +16,7 @@
       </h2>
 
       <p data-animate="fade-left" data-animate-delay="120" style="font-family:'Abhaya Libre',serif; font-size:1rem; color:rgba(255,255,255,0.75); line-height:1.7; margin:0 0 44px; max-width:460px;">
-        More than 100 HMO and residential properties managed across Birmingham.
+        More than 100 House In Multiple Occupation and residential properties managed across Birmingham.
         Landlords and tenants choose Resource Housing because our standards are different.
       </p>
 

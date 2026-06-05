@@ -30,7 +30,7 @@
           <span style="color:#111111;">About </span><span style="color:var(--brand-primary);">Resource<br>Housing Ltd.</span>
         </h1>
         <p style="font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#555555; line-height:1.8; margin:0 0 32px; max-width:580px;">
-          Resource Housing is a Managing Agent and accommodation provider. With a strong presence in the local market, and an increasing presence internationally, we specialise in three key categories: HMOs (House in Multiple Occupation), property developments and sales management.
+          Resource Housing is a Managing Agent and accommodation provider. With a strong presence in the local market, and an increasing presence internationally, we specialise in three key categories: House In Multiple Occupation (Co-living), property developments and sales management.
         </p>
         <img src="/public/assets/images/uk-houses/uk-1.jpg" alt="Resource Housing Property"
              style="width:100%; height:260px; object-fit:cover; display:block;">
@@ -55,10 +55,10 @@
     </h2>
 
     <p data-animate="fade-up" data-animate-delay="100" style="font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#555555; line-height:1.85; margin:0 0 4px; text-align:center;">
-      Since January 2020, Resource Housing has been a trusted provider of HMO / Supported Accommodation, Serviced Accommodation, and Transitional Housing. We specialise in creating safe, comfortable, and well-managed homes for individuals, while providing landlords with professional property management that maximises their investment.
+      Since January 2020, Resource Housing has been a trusted provider of House In Multiple Occupation / Supported Accommodation, Serviced Accommodation, and Transitional Housing. We specialise in creating safe, comfortable, and well-managed homes for individuals, while providing landlords with professional property management that maximises their investment.
     </p>
     <p data-animate="fade-up" data-animate-delay="180" style="font-family:'Abhaya Libre',serif; font-size:1.05rem; color:#555555; line-height:1.85; margin:0 0 48px; text-align:center;">
-      With deep knowledge of property market and an expanding presence, we deliver tailored solutions that benefit both landlords and tenants. From expert HMO management to serviced accommodation nationwide and Transitional Housing for individuals, Resource Housing combines professionalism, care, and results-driven service. Choose Resource Housing for a partner who creates thriving homes, supports landlords, and expands innovative accommodation services.
+      With deep knowledge of property market and an expanding presence, we deliver tailored solutions that benefit both landlords and tenants. From expert House In Multiple Occupation management to serviced accommodation nationwide and Transitional Housing for individuals, Resource Housing combines professionalism, care, and results-driven service. Choose Resource Housing for a partner who creates thriving homes, supports landlords, and expands innovative accommodation services.
     </p>
 
     <img data-animate="fade-up" data-animate-delay="260" src="/public/assets/images/uk-houses/uk-9.jpg" alt="Resource Housing"
@@ -88,7 +88,7 @@ $aboutServices = [
   <div class="max-w-screen-xl mx-auto px-8 md:px-16" style="position:relative; z-index:1;">
 
     <p data-animate="fade-up" style="font-family:'Abhaya Libre',serif; font-size:2rem; font-weight:700; color:#ffffff; text-align:center; line-height:1.45; margin:0 auto 56px; max-width:640px;">
-      We provide HMO rooms to general public 18<br>and over with our compliances services
+      We provide House In Multiple Occupation rooms to general public 18<br>and over with our compliances services
     </p>
 
     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;" data-stagger="70">
